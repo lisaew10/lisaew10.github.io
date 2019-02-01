@@ -55,7 +55,7 @@ header {
 }
 
 header img {
-	display: inline-block;
+	
 	vertical-align: middle;
     margin: 10px;
     
@@ -63,10 +63,12 @@ header img {
 a:link, a:visited {
     background-color: #758497;
     color: white;
-    padding: 14px 25px;
+    padding: 14px 2px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    width: 100%;
+    
   }
   
   
@@ -86,6 +88,7 @@ a:link, a:visited {
 ul {
 
     list-style: none;
+    
 
 }
  /* id selectors */
