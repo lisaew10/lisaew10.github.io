@@ -1,0 +1,18 @@
+@media screen and (min-width: 501px) {
+    .menu {
+        display: none;
+    }
+    li {
+        float: left;
+    }
+    .forecast {
+        display: block;
+    }
+    .nav {
+        display: block;
+    }
+    .main {
+        margin: 10px auto;
+    
+    }
+}

@@ -49,15 +49,15 @@ header {
 	background-color: #c6bc8d;
 	border: 1px solid #758497;
 	box-shadow: 0 0 30px #777;
-    text-align: center;
+    text-align: center; 
     font-family: Montserrat, sans-serif;
        
 }
 
 header img {
 	
-	vertical-align: middle;
-    margin: 10px;
+    float: middle;
+    height: 150px;
     
 }
 a:link, a:visited {
@@ -89,7 +89,6 @@ ul {
 
     list-style: none;
     
-
 }
  /* id selectors */
 
