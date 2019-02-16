@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     
     display: block;
-    font-size: 2em;
+    font-size: 1.8em;
     margin-top: 0.67em;
     margin-bottom: 0.67em;
     margin-left: 0;
@@ -59,14 +59,16 @@ header {
     background-color: #c6bc8d;
     border: 1px solid #758497;
     box-shadow: 0 0 30px #777;
-    text-align: center;
+    text-align: auto;
     font-family: Montserrat, sans-serif;
 }
 
 header img {
-    float: middle;
-    height: 150px;
+    float: left;
+    margin-right: 10px;
+    height: 100px;
 }
+header h1 {margin: 0; font-size: 1.9rem;}
 
 a:link, a:visited {
     /* background-color: #758497; */
@@ -108,10 +110,11 @@ main {
 }
 
 
+
 .herodiv {
     
     position: relative;
-    background-image: url("../images/PrestonOverview.jpg");
+   /*  background-image: url("../images/PrestonOverview.jpg");
     /* background-repeat: no-repeat;  */
     min-height: 200px;
     width: 100vw;
@@ -134,7 +137,7 @@ main {
 
 .active-preston {
     background-color: #9c8565;
-    border-radius: 18px;
+    border-radius: 10px;
 }
 
 
@@ -152,7 +155,12 @@ li {
     float: none;
     border-right: 1px solid #bbb;
 }
-
+/* clearfix: force an Element not to collagse*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 /* id selectors */
 @media screen and (max-width: 500px) {
     .forecast {
@@ -164,4 +172,5 @@ li {
     .nav {
         display: none;
     }
+    .weathersummary {display:none;}
 }
