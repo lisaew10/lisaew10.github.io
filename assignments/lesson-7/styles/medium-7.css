@@ -1,0 +1,7 @@
+
+@media screen and (min-width: 451px) and (max-width:1000px) {
+.gallery-rows {
+    
+    grid-template-columns: auto auto;
+}
+}

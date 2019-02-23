@@ -1,0 +1,31 @@
+@media screen and (min-width: 1001px) {
+    figure img:hover {
+        box-shadow: 0 0 50px rgb(215, 204, 240);
+    }
+    #hamburgerMenu {
+        display: none;
+    }
+    .navBar li:first-child {
+        display: none;
+    }
+    .navBar li {
+        display: block;
+        flex: 1 1 auto;
+    }
+    .navBar, .container {
+        flex-direction: row;
+    }
+    .gallery-rows {
+        grid-template-columns: auto auto auto;
+    }
+    .flex {
+        flex-direction: row;
+    }
+        header h1 {
+            margin-top: 5%;
+        }
+        header h2 {
+            margin-top: 5%;
+            margin-left: 2%;
+        }
+    }
