@@ -4,4 +4,16 @@
     
     grid-template-columns: auto auto;
 }
+.flex {
+    display: flex;
+    flex-direction: row;
+
+}
+.navBar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+
 }
