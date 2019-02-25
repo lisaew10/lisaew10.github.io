@@ -5,10 +5,13 @@
     #hamburgerMenu {
         display: none;
     }
- 
-    .navBar ul, .navbar, .container {
+    #menu {
+        display: flex;
         flex-direction: row;
     }
+    /* .container {
+        flex-direction: row;
+    } */
     .gallery-rows {
         grid-template-columns: auto auto auto;
     }
@@ -21,5 +24,8 @@
     header h2 {
         margin-top: 5%;
         margin-left: 2%;
+    }
+    .hide {
+        display: block;
     }
 }

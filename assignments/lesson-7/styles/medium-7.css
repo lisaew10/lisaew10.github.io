@@ -1,19 +1,26 @@
-
 @media screen and (min-width: 451px) and (max-width:1000px) {
-.gallery-rows {
-    
-    grid-template-columns: auto auto;
-}
-.flex {
-    display: flex;
-    flex-direction: row;
-
-}
-.navBar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-
+    .flex {
+        display: flex;
+        flex-direction: row;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    #menu {
+        display: flex;
+        flex-direction: row;
+    }
+    #hamburgerMenu {
+        display: none;
+    }
+    .hide {
+        display: block;
+    }
+    .gallery-rows {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1f, 1f;
+    }
 }

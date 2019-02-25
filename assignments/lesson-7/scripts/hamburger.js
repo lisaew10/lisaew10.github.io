@@ -2,5 +2,5 @@
 
 function toggleMenu() {
 
-    document.getElementById("menu").classList.toggle("navbar");
+    document.getElementById("menu").classList.toggle("hide");
 }
