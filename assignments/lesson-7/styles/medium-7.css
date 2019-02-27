@@ -22,7 +22,7 @@
     .gallery-rows {
         display: grid;
         width: 100%;
-        grid-template-columns: 1f, 1f;
+        grid-template-columns: 1fr, 1fr;
     }
     .weathersummary, .forecast {
         display: none;
