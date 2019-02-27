@@ -1,0 +1,53 @@
+html {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+table {
+    border: 2px solid rgb(200, 200, 200);
+    letter-spacing: 1px;
+    font-size: 1rem;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12), 0 3px 5px -1px rgba(0, 0, 0, .2)
+}
+#goalmet{
+    background-color: #628ca6;
+}
+td, th {
+    padding: 10px 20px;
+}
+
+td {
+    text-align: center;
+}
+
+tr:nth-child(even) td {
+    background-color: #e7f0ed;
+}
+
+tr:nth-child(odd) td {
+    background-color: #e7ffed;
+}
+
+thead>tr>th {
+    background-color: #7fb9c2;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+tbody>tr>th {
+    background-color: #628ca6;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+/* not sure wht this did not work? */
+/* td:nth-child(15) {
+    background-color: #628ca6;
+} */
+
+tfoot {
+    background-color: #7fb9c2;
+    font-size: 80%;
+}
+
+
