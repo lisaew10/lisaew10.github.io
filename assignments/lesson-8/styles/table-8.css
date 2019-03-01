@@ -3,13 +3,13 @@ html {
 }
 
 table {
-    border: 2px solid rgb(200, 200, 200);
-    letter-spacing: 1px;
-    font-size: 1rem;
-    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12), 0 3px 5px -1px rgba(0, 0, 0, .2)
+    border: 2px solid darkgrey;
+    font-size: 1.2em;
+    box-shadow: 10px 10px 10px -1px #628ca6;
 }
 #goalmet{
     background-color: #628ca6;
+  color: white;
 }
 td, th {
     padding: 10px 20px;
@@ -40,10 +40,7 @@ tbody>tr>th {
     font-weight: bold;
     color: white;
 }
-/* not sure wht this did not work? */
-/* td:nth-child(15) {
-    background-color: #628ca6;
-} */
+
 
  tfoot>tr>td{
     background-color: #7fb9c2;
