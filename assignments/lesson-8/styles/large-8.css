@@ -29,4 +29,8 @@
     .hide {
         display: block;
     }
+    form label.sbs {
+        padding: .4rem 0;
+        
+    }
 }

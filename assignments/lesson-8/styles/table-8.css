@@ -3,14 +3,17 @@ html {
 }
 
 table {
+    margin: 0 auto;
     border: 2px solid darkgrey;
     font-size: 1.2em;
     box-shadow: 10px 10px 10px -1px #628ca6;
 }
-#goalmet{
+
+#goalmet {
     background-color: #628ca6;
-  color: white;
+    color: white;
 }
+
 td, th {
     padding: 10px 20px;
 }
@@ -41,11 +44,7 @@ tbody>tr>th {
     color: white;
 }
 
-
- tfoot>tr>td{
+tfoot>tr>td {
     background-color: #7fb9c2;
-
-    font-size: 80%; 
+    font-size: 80%;
 }
-
-
