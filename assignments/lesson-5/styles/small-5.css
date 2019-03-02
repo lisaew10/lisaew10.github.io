@@ -12,27 +12,21 @@ body {
     color: #eae7ae;
 }
 
-
-
 h1, h2, h3, h4, h5, h6 {
     color: white;
     font-family: 'Lora', serif;
-    text-align: auto;
 }
 
 h1 {
-    
     display: block;
     font-size: 2em;
     margin-top: 0.67em;
     margin-bottom: 0.67em;
     margin-left: 0;
     margin-right: 0;
-   
 }
 
 h2 {
-    
     display: block;
     font-size: 1.5em;
     margin-top: 0.83em;
@@ -64,14 +58,11 @@ header {
 }
 
 header img {
-    float: middle;
     height: 150px;
 }
 
 a:link, a:visited {
-    /* background-color: #758497; */
     color: white;
-    /*padding: 14px 2px;*/
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -88,7 +79,6 @@ a:hover, a:active {
 
 .motto {
     font-family: Montserrat, sans-serif;
-    border: 2px solid #9c8565;
     border-radius: .2px;
     font-size: 16pt;
     background-color: #9c8565;
@@ -107,9 +97,7 @@ main {
     margin: auto;
 }
 
-
 .herodiv {
-    
     position: relative;
     background-image: url("../images/PrestonOverview.jpg");
     /* background-repeat: no-repeat;  */
@@ -119,7 +107,6 @@ main {
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
-  
 }
 
 .weathersummary {
@@ -137,7 +124,6 @@ main {
     border-radius: 18px;
 }
 
-
 /* Remove list bullets */
 
 ul {
@@ -154,6 +140,7 @@ li {
 }
 
 /* id selectors */
+
 @media screen and (max-width: 500px) {
     .forecast {
         display: none;
