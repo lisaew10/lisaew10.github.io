@@ -1,23 +1,26 @@
-
-
 /* * {
     margin: 10px;
     box-sizing: border-box;
 } */
 
 body {
-    background-color:   #f8f2f2;;
+    background-color: #f8f2f2;
+    
     line-height: 33px;
     font-family: 'Muli', sans-serif;
     font-size: 16px;
     color: black;
 }
+body {
+    display:block;
+    margin: 0;
+}
 
 h1, h2, h3, h4, h5, h6 {
     color: black;
     font-family: 'Prosto One', cursive;
-    margin: 5px;
-    
+    /* text-align: center; */
+    /* margin: 5px; */
 }
 
 p {
@@ -26,9 +29,9 @@ p {
 }
 
 header {
-    margin: 3px auto;
+    margin: 3px;
     padding: 0 2%;
-    background-color:  #ffb74d;
+    background-color: #ffb74d;
     box-shadow: 0 0 30px #777;
     font-family: 'Muli', sans-serif;
     font-size: .8rem;
@@ -39,24 +42,25 @@ header img {
     height: 5rem;
 }
 
-
 /* class selectors */
 
 .herodiv {
     position: relative;
-    min-height: 200px;
+    /* min-height: 200px;
     width: 100vw;
     left: 50%;
     right: 50%;
     margin-left: -50vw;
-    margin-right: -50vw;
+    margin-right: -50vw; */
+    margin: 1.2rem auto;
+       max-width: 1200px;
 }
 
 .weathersummary {
     position: absolute;
     top: 25px;
     right: 50px;
-    background: radial-gradient(rgb(200,135,25), #333332);
+    background: radial-gradient(rgb(200, 135, 25), #333332);
     border: 1px solid #000;
     color: white;
     padding: 1rem;
@@ -66,8 +70,7 @@ header img {
 nav {
     margin: 3px auto;
     padding: 0 2%;
-    background-color:   #ffe97d;
-
+    background-color: #ffe97d;
 }
 
 ul {
@@ -77,7 +80,6 @@ ul {
     display: flex;
     flex-direction: column;
 }
-
 
 ul li a {
     display: block;
@@ -95,24 +97,22 @@ nav ul li.active a {
     color: black;
 }
 
-
-
 a:hover {
-    background-color:#f8f2f2;
+    background-color: #f8f2f2;
     color: black;
     border-radius: 20px;
 }
-
 
 footer iframe {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
+
 footer {
     background-color: #ffe97d;
     padding: .5rem 2%;
-    text-align:center;
+    text-align: center;
 }
 
 main {
@@ -123,24 +123,28 @@ main {
 }
 
 figure {
-    margin: 0 width 100%;
+    margin: 25px 0 10px 0;
+    width: 100%;
 }
 
 figure img {
     width: 100%;
+}
+figcaption {
+    margin-left: 28px;
 }
 
 iframe {
     width: 100%;
     height: 300px;
 }
+
 /* class selectors*/
+
 .flex {
     display: flex;
     flex-flow: row wrap;
-
 }
-
 
 /* .motto { display: flex; justify-content: flex-end;} */
 
@@ -148,16 +152,24 @@ iframe {
 
 .gallery-rows {
     display: grid;
-     
 }
+
+#stormCenterImg {
+    display: block;
+    float: right;
+    width: 50%;
+    margin: 10% 2%;
+}
+
 /* FORM */
+
 form fieldset {
     margin: 2rem 0;
     border: none;
     /* border-radius: 10px; */
     padding: .5rem 2%;
-
 }
+
 form legend {
     color: black;
     margin: 0 1rem;
@@ -166,12 +178,12 @@ form legend {
     border-radius: .7rem;
     background-color: #c88719;
 }
-form label.top, form div{
+
+form label.top, form div {
     display: block;
-    padding-top: 1rem; 
+    padding-top: 1rem;
     color: black;
     font-size: 1rem;
-
 }
 
 form label.top input, form label.top select {
@@ -186,6 +198,7 @@ form label.top input, form label.top select {
     max-width: 20rem;
     background-color: #ffe97d;
 }
+
 textarea {
     display: block;
     font-size: 1rem;
@@ -197,11 +210,13 @@ textarea {
     max-width: 20rem;
     background-color: #ffe97d;
 }
+
 form label.sbs {
     display: block;
     padding: .60rem 0;
     color: black;
 }
+
 form input.submitBtn {
     border: none;
     background-color: #c88719;
@@ -213,19 +228,17 @@ form input.submitBtn {
     max-width: 20rem;
 }
 
-
- input:required:focus {
-     border: 2px solid red;
-     outline: none;
- }
+input:required:focus {
+    border: 2px solid red;
+    outline: none;
+}
 
 /* small views */
 
 @media (max-width: 450px) {
-    
-   .hide{
-    display:none;
-}
+    .hide {
+        display: none;
+    }
     nav {
         /* max-width: 69rem; */
         /* margin: .5rem auto; */
@@ -240,5 +253,8 @@ form input.submitBtn {
     .gallery-rows {
         display: grid;
         grid-template-row: auto;
+    }
+    #stormCenterImg {
+        display: none;
     }
 }
