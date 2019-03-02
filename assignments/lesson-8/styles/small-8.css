@@ -181,7 +181,7 @@ form label.top input, form label.top select {
     color: black;
     width: 100%;
     max-width: 20rem;
-    background-color: #ffb74d;
+    background-color: #ffe97d;
 }
 textarea {
     display: block;
@@ -192,16 +192,16 @@ textarea {
     color: black;
     width: 100%;
     max-width: 20rem;
-    background-color: #ffb74d;
+    background-color: #ffe97d;
 }
 form label.sbs {
     display: block;
-    padding: .75rem 0;
+    padding: .60rem 0;
     color: black;
 }
 form input.submitBtn {
     border: none;
-    background-color: #c88719;
+    background-color: #ffb74d;
     color: black;
     border-radius: 1rem;
     padding: .75rem 1.5rem;
@@ -210,13 +210,11 @@ form input.submitBtn {
     max-width: 20rem;
 }
 
-form label.top input:required {
-    border-left: red solid 6px;
-}
-form label.top input:required:valid {
-    border-left: green solid 6px;
-}
 
+ input:required:focus {
+     border: 2px solid red;
+     outline: none;
+ }
 
 /* small views */
 
