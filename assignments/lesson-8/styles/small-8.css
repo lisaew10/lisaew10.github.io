@@ -64,8 +64,8 @@ header img {
 }
 
 nav {
-    /* max-width: 1200px; */
-    margin: 0 5px 0 5px;
+    margin: 3px auto;
+    padding: 0 2%;
     background-color:   #ffe97d;
 
 }
@@ -108,6 +108,11 @@ footer iframe {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+footer {
+    background-color: #ffe97d;
+    padding: .5rem 2%;
+    text-align:center;
 }
 
 main {
