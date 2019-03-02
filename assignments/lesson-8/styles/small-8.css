@@ -153,8 +153,8 @@ iframe {
 /* FORM */
 form fieldset {
     margin: 2rem 0;
-    border: 2px solid #ffb74d;
-    border-radius: 10px;
+    border: none;
+    /* border-radius: 10px; */
     padding: .5rem 2%;
 
 }
@@ -162,6 +162,9 @@ form legend {
     color: black;
     margin: 0 1rem;
     padding: 0 .5rem;
+    font-size: 1.5rem;
+    border-radius: .7rem;
+    background-color: #c88719;
 }
 form label.top, form div{
     display: block;
@@ -201,7 +204,7 @@ form label.sbs {
 }
 form input.submitBtn {
     border: none;
-    background-color: #ffb74d;
+    background-color: #c88719;
     color: black;
     border-radius: 1rem;
     padding: .75rem 1.5rem;
