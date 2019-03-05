@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description"
+        content="Weather cite - Forecast Trek page for Lisa Student in CIT 230: Web Front-End Development at Brigham Young University-Idaho.">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small-9.css">
+    <link rel="stylesheet" href="styles/medium-9.css">
+    <link rel="stylesheet" href="styles/large-9.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora|Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Prosto+One" rel="stylesheet">
+
+    <title>Preston, ID | Forecast Trek </title>
+</head>
+
+
+<header class="flex">
+    <div class="logo">
+        <img src="images/sunclouds.png" alt="logo sun with clouds">
+    </div>
+    <div>
+        <h1>Forecast Trek</h1>
+        <h2 class="motto">
+            Weather for every hike!
+        </h2>
+    </div>
+</header>
+<nav>
+    <button id="hamburgerMenu" onclick="toggleMenu()">&equiv;Menu</button>
+    <ul id="menu" class="hide">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="preston-9.html">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li class="active"><a href="#">Gallery</a></li>
+    </ul>
+
+</nav>
+<style>
+img{
+    height: 200px;
+}
+    </style>
+<body>
+    <main class="contianer">
+        <div class="gallery-rows">
+
+            <figure class="shadow">
+                <img src="images/agriculture-large.jpg" alt="newly harvested field late summer" srcset="
+                            images/agriculture-small.jpg 400w, 
+                            images/agriculture-med.jpg 800w, 
+                            images/agriculture-large.jpg 1200w">
+                <figcaption>Late Summer</figcaption>
+            </figure>
+
+
+            <figure class="shadow">
+                <img src="images/fall-pond-large.jpg" alt="Pond in Idaho late fall" srcset="
+                            images/fall-pond-small.jpg 400w, 
+                            images/fall-pond-med.jpg 800w, 
+                            images/fall-pond-large.jpg 1200w">
+                <figcaption>Pond in late Fall Meridian, Idaho</figcaption>
+            </figure>
+
+            <figure class="shadow">
+                <img src="images/lake-large.jpg" alt="man in blue coat standing near bear lake rain" srcset="
+                            images/lake-small.jpg 400w, 
+                            images/lake-med.jpg 800w, 
+                            images/lake-large.jpg 1200w">
+                <figcaption>Rain coming to Bear Lake</figcaption>
+            </figure>
+
+            <figure class="shadow">
+                <img src="images/snow field-large.jpg" alt="light dusting of snow" srcset="
+                            images/snow field-small.jpg 400w, 
+                            images/snow field-med.jpg 800w, 
+                            images/snow field-large.jpg 1200w">
+                <figcaption>Light dusting of Snow in foothills. </figcaption>
+            </figure>
+
+
+            <figure class="shadow">
+                <img src="images/barn-lightening-large.jpg" alt="lightening over a barn" srcset="
+                                images/barn-lightening-small.jpg 400w, 
+                                images/barn-lightening-med.jpg 800w, 
+                                images/barn-lightening-large.jpg 1200w">
+                <figcaption>Severe weather hit the Boise foothills.</figcaption>
+            </figure>
+
+            <figure class="shadow">
+                <img src="images/WeberFarm-large.jpg" alt="snow in Middleton, ID" srcset="
+                                images/WeberFarm-small.jpg 400w, 
+                                images/WeberFarm-med.jpg 800w, 
+                                images/WeberFarm-large.jpg 1200w">
+                <figcaption>Bitter tempatures with a light dusting of snow.</figcaption>
+            </figure>
+
+        </div>
+
+    </main>
+    <footer>
+        <h2>Contact Information:</h2>
+
+        <span id="currentDate"></span>
+        <p>&copy; <span id="copyright-year"></span> | Lisa E. Weber | Forecast Trek <a href="#">Home</a></p>
+
+    </footer>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+
+</body>
+
+</html>
