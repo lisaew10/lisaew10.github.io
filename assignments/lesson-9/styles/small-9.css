@@ -32,7 +32,7 @@ header {
     margin: 3px;
     padding: 0 2%;
     background-color: #ffb74d;
-    box-shadow: 0 0 30px #777;
+    /* box-shadow: 0 0 30px #777; */
     font-family: 'Muli', sans-serif;
     font-size: .8rem;
 }
@@ -143,7 +143,8 @@ iframe {
 
 .flex {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: nowrap;
+    justify-content: center;
 }
 
 /* .motto { display: flex; justify-content: flex-end;} */
