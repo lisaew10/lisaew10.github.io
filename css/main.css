@@ -9,31 +9,43 @@ body {
     font-size: 16px;
     line-height: 35px;
     font-family: Montserrat, sans-serif;
-    color: #47847e;
+    color: black;
+    /* background-color: #ffd0b0; */
 }
-
+a:link{
+color: black;
+}
+a:visited{
+color: darkgrey;
+}
+a:hover{
+    background-color: #c96f53;
+    color: black;
+    border-radius: 5px;
+}
 
 h1 {
     font-size: 2.4rem;
-    color: rgb(194, 146, 105);
+    color: black;
 }
 
 h2 {
     font-size: 2.0rem;
     text-align: center;
-    border-bottom: 1px solid #bbb;
+    border-bottom: 1px solid #FF9E80;
 }
 
 header, main, footer {
     margin: 1.25rem auto;
     padding: .5rem;
     max-width: 650px;
+    
 }
 
 header, footer, footer a {
     text-align: center;
-    background-color: rgb(33, 32, 61);
-    color: whitesmoke;
+    background-color: #c96f53;
+    color: black;
 }
 
 header img {
@@ -45,3 +57,4 @@ header img {
 footer {
     font-size: smaller;
 }
+
