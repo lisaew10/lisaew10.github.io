@@ -21,15 +21,19 @@
 <body>
     <header class="flex">
         <div class="logo">
-            <img src="images/sunclouds.png" alt="logo sun with clouds">
+            <img src="images/weather-icon-png-7.jpg" alt="logo sun with clouds">
         </div>
         <div>
-            <h1>Forecast Trek</h1>
-            <h3 class="motto">
+            <p>Forecast Trek <br>
                 Weather for every hike!
-            </h3>
+            </p>
         </div>
-
+        <div style="width: 215px;"><iframe style="display: block;"
+                src="https://cdnres.willyweather.com/widget/loadView.html?id=103874" width="215" height="34"
+                frameborder="0" scrolling="no"></iframe><a
+                style="display: block;height: 34px;z-index: 1;width: 20px;text-indent: -9999em;position: relative;margin: -34px 0 0 0;float: right"
+                href="https://www.willyweather.com/id/caribou-county/soda-springs.html" rel="nofollow">Soda Springs ID
+                forecast</a></div>
     </header>
     <nav>
         <button id="hamburgerMenu" onclick="toggleMenu()">&equiv;Menu</button>
@@ -47,7 +51,7 @@
 
     <main>
         <h2>Report Storms Here:</h2>
-        <img id="stormCenterImg" src="images/SQ_image_stormcenter.jpg" alt="storm over a barn"> 
+        <img id="stormCenterImg" src="images/SQ_image_stormcenter.jpg" alt="storm over a barn">
         <form method="GET" action="thanks.html">
 
             <fieldset>
