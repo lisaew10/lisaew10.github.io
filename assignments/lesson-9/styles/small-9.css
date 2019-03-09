@@ -5,23 +5,22 @@
 
 body {
     background-color: black;
-    
     line-height: 33px;
     font-family: 'Muli', sans-serif;
     font-size: 16px;
     color: white;
 }
+
 body {
-    display:block;
+    display: block;
     margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: black;
+h1, h2, h4, h5, h6 {
+    color: white;
     font-family: 'Prosto One', cursive;
-    /* text-align: center; */
-    /* margin: 5px; */
 }
+h3 { font-family: 'Prosto One', cursive; color:black; }
 
 p {
     font-size: 1.5em;
@@ -29,19 +28,32 @@ p {
 }
 
 header {
-    margin: 3px;
+    margin: ;
     padding: 0 2%;
     background-color: #ffb74d;
     /* box-shadow: 0 0 30px #777; */
     font-family: 'Muli', sans-serif;
     font-size: .8rem;
     height: 125px;
-    
 }
 
 header img {
     margin-right: 5rem;
     height: 5rem;
+}
+
+article {
+    color: white;
+    border: 12px solid whitesmoke;
+    border-style: ridge;
+    text-align: center;
+    font-size: .9rem;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* grid-column-gap: 10px; */
 }
 
 /* class selectors */
@@ -55,7 +67,7 @@ header img {
     margin-left: -50vw;
     margin-right: -50vw; */
     margin: 1.2rem auto;
-       max-width: 1200px;
+    max-width: 1200px;
 }
 
 .weathersummary {
@@ -70,12 +82,11 @@ header img {
 }
 
 nav {
-    margin: 3px auto;
+    margin: 1rem;
     padding: 0 2%;
     background-color: #ffe97d;
     display: flex;
     justify-content: center;
-    
 }
 
 ul {
@@ -112,6 +123,7 @@ footer iframe {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 1.3rem;
 }
 
 footer {
@@ -136,6 +148,7 @@ figure {
 figure img {
     width: 100%;
 }
+
 figcaption {
     margin-left: 28px;
 }
@@ -154,9 +167,10 @@ iframe {
     color: black;
 }
 
-.logo{
+.logo {
     margin: 1.25rem -4.5rem 1.25rem;
 }
+
 /*gallery*/
 
 .gallery-rows {
