@@ -50,10 +50,11 @@ article {
     font-size: .9rem;
 }
 
-section {
+#section {
     display: grid;
     grid-template-columns: 1fr;
     /* grid-column-gap: 10px; */
+    
 }
 
 /* class selectors */
