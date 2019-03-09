@@ -125,6 +125,7 @@ footer iframe {
     margin-left: auto;
     margin-right: auto;
     margin-top: 1.3rem;
+   
 }
 
 footer {
@@ -277,6 +278,7 @@ input:required:focus {
     .gallery-rows {
         display: grid;
         grid-template-row: auto;
+     
     }
     #stormCenterImg {
         display: none;
