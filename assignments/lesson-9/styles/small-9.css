@@ -48,6 +48,9 @@ header img {
     border-style: ridge;
     text-align: center;
     font-size: .9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin-bottom: 20px;
 }
 
@@ -68,7 +71,7 @@ header img {
 #section article img {
     width: 100%;
     padding-top: 40px;
-    vertical-align: bottom;
+    margin-bottom: -1px;
 }
 
 /* class selectors */
