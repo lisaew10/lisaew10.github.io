@@ -43,4 +43,5 @@
         grid-template-columns: 1fr 1fr 1fr;
         grid-column-gap: 60px;
     }
+    #stormCenterImg {display: flex; }
 }
