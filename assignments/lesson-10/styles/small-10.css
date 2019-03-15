@@ -78,12 +78,6 @@ header img {
 
 .herodiv {
     position: relative;
-    /* min-height: 200px;
-    width: 100vw;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw; */
     margin: 1.2rem auto;
     max-width: 1200px;
 }
@@ -278,13 +272,12 @@ input:required:focus {
 
 /* small views */
 
-/* @media (max-width: 550px) { */
+@media (max-width: 550px) {
     .hide {
         display: none;
     }
     nav {
-        /* max-width: 69rem; */
-        /* margin: .5rem auto; */
+       
         background-color: #ffe97d;
     }
     #hamburgerMenu {
@@ -301,4 +294,4 @@ input:required:focus {
     #stormCenterImg {
         display: none;
     }
-/* } */
+}
