@@ -29,7 +29,10 @@
                 Weather for every hike!
             </p>
         </div>
-        
+        <div>
+
+        </div>
+
     </header>
 
     <nav>
@@ -64,26 +67,71 @@
                     <h3>Weather Summary</h3>
                     <div id="weatherSumId">
                         <div>
-                            <span>Current Tempertature: </span><span id="temp"></span>
+                            <span>Currently: </span><span id="mainWeather"></span>
                         </div>
                         <div>
-                            <span>Current Wind Speed: </span><span id="windSpeed"></span>
+                            <span>Tempertature: </span><span id="mainTemp"></span>
                         </div>
                         <div>
-                            <span>Current Wind Chill: </span><span id="windChill"></span>
+                            <span>Humidity: </span><span id="humid"></span>
                         </div>
+                        <div>
+                            <span>Precipitation: </span><span id="rain"></span>
+                        </div>
+                        <div>
+                            <span>Wind Speed: </span><span id="windSpeed"></span>
+                        </div>
+                        <!-- <div>
+                            <img src="images/placeholder.png" alt="current weather" id="weather_icon">
+                        </div> -->
                     </div>
                 </span>
 
             </div>
         </span>
-        <article class="forecast">
-            <h2>5-Day Forecast</h2>
-            <p>The real forecast will go here
 
-            </p>
 
-        </article>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="5">5-Day Forecast</th>
+                </tr>
+            </thead>
+            <tr>
+                <td id="day1"></td>
+            </tr>
+            <tr>
+                <td id="temp1">&deg;</td>
+            </tr>
+            <tr>
+                <td id="day2"></td>
+
+            </tr>
+            <tr>
+                <td id="temp2">&deg;</td>
+            </tr>
+            <tr>
+                <td id="day3"></td>
+            </tr>
+            <tr>
+                <td id="temp3">&deg;</td>
+            </tr>
+            <tr>
+                <td id="day4"></td>
+            </tr>
+            <tr>
+                <td id="temp4">&deg;</td>
+            </tr>
+            <tr>
+                <td id="day5"></td>
+            </tr>
+            <tr>
+                <td id="temp5">&deg;</td>
+            </tr>
+
+        </table>
+
+
         <article>
             <h2>Hiking in the Rain</h2>
             <p>by: An Awesome Weather Person<p>
@@ -105,7 +153,8 @@
     </footer>
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/hamburger.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <script src="scripts/weatherapi.js"></script>
+    <!-- <script src="scripts/windchill.js"></script> -->
 
 </body>
 
