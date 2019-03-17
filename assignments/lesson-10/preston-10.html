@@ -6,8 +6,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description"
-        content="Weather cite - Forecast Trek page for Lisa Student in CIT 230: Web Front-End Development at Brigham Young University-Idaho.">
+    <meta name="description" content="Weather cite - Forecast Trek page for Lisa Student in CIT 230: Web Front-End Development at Brigham Young University-Idaho.">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small-10.css">
     <link rel="stylesheet" href="styles/medium-10.css">
@@ -70,7 +69,7 @@
                             <span>Currently: </span><span id="mainWeather"></span>
                         </div>
                         <div>
-                            <span>Tempertature: </span><span id="mainTemp"></span>
+                            <span>Tempertature: </span><span id="mainTemp">&deg;</span>
                         </div>
                         <div>
                             <span>Humidity: </span><span id="humid"></span>
@@ -90,45 +89,27 @@
             </div>
         </span>
 
-
-        <table>
+        <div class=fiveForecast></div>
+        <table style="width:30%">
             <thead>
                 <tr>
                     <th colspan="5">5-Day Forecast</th>
                 </tr>
             </thead>
             <tr>
-                <td id="day1"></td>
+                <th id="day0"></th>
+                <th id="day1"></th> 
+                <th id="day2"></th>
+                <th id="day3"></th>
+                <th id="day4"></th>
             </tr>
             <tr>
-                <td id="temp1">&deg;</td>
+                <td><img id="icon0"><br><span id="temp0"></span>&deg F</td>
+                <td><img id="icon1"><br><span id="temp1"></span>&deg F</td>
+                <td><img id="icon2"><br><span id="temp2"></span>&deg F</td>
+                <td><img id="icon3"><br><span id="temp3"></span>&deg F</td>
+                <td><img id="icon4"><br><span id="temp4"></span>&deg F</td>
             </tr>
-            <tr>
-                <td id="day2"></td>
-
-            </tr>
-            <tr>
-                <td id="temp2">&deg;</td>
-            </tr>
-            <tr>
-                <td id="day3"></td>
-            </tr>
-            <tr>
-                <td id="temp3">&deg;</td>
-            </tr>
-            <tr>
-                <td id="day4"></td>
-            </tr>
-            <tr>
-                <td id="temp4">&deg;</td>
-            </tr>
-            <tr>
-                <td id="day5"></td>
-            </tr>
-            <tr>
-                <td id="temp5">&deg;</td>
-            </tr>
-
         </table>
 
 
@@ -144,8 +125,7 @@
     </main>
     <footer>
         <h3>Contact Information:</h3>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.72628245878!2d-111.9153446480441!3d42.09980531214108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C+ID+83263!5e0!3m2!1sen!2sus!4v1549728631764"
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.72628245878!2d-111.9153446480441!3d42.09980531214108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C+ID+83263!5e0!3m2!1sen!2sus!4v1549728631764"
             frameborder="0" style="border:0" allowfullscreen></iframe>
         <span id="currentDate"></span>
         <p>&copy; <span id="copyright-year"></span> | Lisa E. Weber | Forecast Trek <a href="#">Home</a></p>

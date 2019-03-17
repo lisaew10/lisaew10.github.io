@@ -172,6 +172,23 @@ iframe {
     height: 300px;
 }
 
+table, th, td {
+    border: 1px solid slategray;
+    border-collapse: collapse;
+}
+td {
+    background-color: #ffe97d;
+    text-align: center;
+    color: black;
+}
+th {
+    background-color: darkgrey;
+    color: black;
+}
+table{
+    margin: 0 auto;
+}
+
 /* class selectors*/
 
 .flex {
