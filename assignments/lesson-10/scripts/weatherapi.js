@@ -16,7 +16,10 @@ weatherRequest.send();
 
 weatherRequest.onload = function () {
     var weatherData = JSON.parse(weatherRequest.responseText);
-    console.log(weatherData);
+    var icon_path = "https://openweathermap.org/img/w/";
+
+    // console.log(weatherData);
+    document.getElementById('summaryIcon').src = icon_path + weatherData.weather[0].icon + ".png";
     document.getElementById('mainWeather').innerHTML = weatherData.weather[0].main;
     document.getElementById('mainTemp').innerHTML = weatherData.main.temp;
     document.getElementById('humid').innerHTML = weatherData.main.humidity;
@@ -39,7 +42,7 @@ forecastRequest.send();
 
 forecastRequest.onload = function () {
     var forecastData = JSON.parse(forecastRequest.responseText);
-    var icon_path = "https://openweathermap.org/img/w";
+    var icon_path = "https://openweathermap.org/img/w/";
 
     document.getElementById("day0").innerHTML = dayNames[new Date(forecastData.list[0].dt_txt).getDay()];
     document.getElementById("icon0").src = icon_path + forecastData.list[0].weather[0].icon + ".png";
