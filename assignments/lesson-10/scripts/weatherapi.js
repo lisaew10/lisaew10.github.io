@@ -23,7 +23,6 @@ weatherRequest.onload = function () {
     document.getElementById('mainWeather').innerHTML = weatherData.weather[0].main;
     document.getElementById('mainTemp').innerHTML = weatherData.main.temp;
     document.getElementById('humid').innerHTML = weatherData.main.humidity;
-    // document.getElementById('rain').innerHTML = weatherData.rain.3h;
     document.getElementById('windSpeed').innerHTML = weatherData.wind.speed;
 
     // var iconcode = weatherInfo.weather[0].icon;
