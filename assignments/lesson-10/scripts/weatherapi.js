@@ -1,11 +1,4 @@
-var dayNames = new Array(7);
-dayNames[0] = "Sun";
-dayNames[1] = "Mon";
-dayNames[2] = "Tue";
-dayNames[3] = "Wed";
-dayNames[4] = "Thur";
-dayNames[5] = "Fri";
-dayNames[6] = "Sat";
+
 
 //current weather
 var weatherRequest = new XMLHttpRequest();
@@ -33,9 +26,21 @@ weatherRequest.onload = function () {
 
 
 // forecast
+var dayNames = new Array(7);
+dayNames[0] = "Sun";
+dayNames[1] = "Mon";
+dayNames[2] = "Tue";
+dayNames[3] = "Wed";
+dayNames[4] = "Thur";
+dayNames[5] = "Fri";
+dayNames[6] = "Sat";
+
+
+var apiForecast = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=24b87aad01e054f85a32cef48af44129&units=imperial';
+
 var forecastRequest = new XMLHttpRequest();
 
-forecastRequest.open('GET', 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=24b87aad01e054f85a32cef48af44129&units=imperial', true);
+forecastRequest.open('GET', apiForecast, true);
 
 forecastRequest.send();
 

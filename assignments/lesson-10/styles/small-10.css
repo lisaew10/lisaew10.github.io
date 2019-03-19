@@ -16,11 +16,7 @@ body {
     margin: 0;
 }
 
-h1,
-h2,
-h4,
-h5,
-h6 {
+h1, h2, h4, h5, h6 {
     color: white;
     font-family: 'Prosto One', cursive;
 }
@@ -66,7 +62,6 @@ header img {
     display: grid;
     grid-template-columns: 1fr;
     /* grid-column-gap: 10px; */
-
 }
 
 #section article p:first-of-type {
@@ -147,7 +142,6 @@ footer iframe {
     margin-left: auto;
     margin-right: auto;
     margin-top: 1.3rem;
-
 }
 
 footer {
@@ -183,9 +177,7 @@ iframe {
     height: 300px;
 }
 
-table,
-th,
-td {
+table, th, td {
     border: 1px solid slategray;
     border-collapse: collapse;
 }
@@ -206,6 +198,12 @@ table {
 }
 
 /* class selectors*/
+
+/* .fiveForecast {
+    background:  #c88719;
+    padding: 54m;
+    color: black;
+} */
 
 .flex {
     display: flex;
@@ -249,16 +247,14 @@ form legend {
     background-color: #c88719;
 }
 
-form label.top,
-form div {
+form label.top, form div {
     display: block;
     padding-top: 1rem;
     color: white;
     font-size: 1rem;
 }
 
-form label.top input,
-form label.top select {
+form label.top input, form label.top select {
     -webkit-appearance: none;
     display: block;
     font-size: 1rem;
@@ -311,26 +307,19 @@ input:required:focus {
     .hide {
         display: none;
     }
-
     nav {
-
         background-color: #ffe97d;
     }
-
     #hamburgerMenu {
         display: block;
     }
-
     .weathersummary {
         display: none;
     }
-
     .gallery-rows {
         display: grid;
         grid-template-row: auto;
-
     }
-
     #stormCenterImg {
         display: none;
     }
