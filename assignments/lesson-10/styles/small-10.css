@@ -45,7 +45,18 @@ header img {
     margin-right: 5rem;
     height: 5rem;
 }
-
+.leftcol, .rightcol {
+    max-width:48%;
+    flex: 1 0 15em; 
+    padding: 10px;
+      }
+      .sec1, .sec2 {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+   }  
 #section article {
     color: white;
     border: 12px solid whitesmoke;
@@ -299,6 +310,10 @@ form input.submitBtn {
 input:required:focus {
     border: 2px solid red;
     outline: none;
+}
+
+.img1, .img2 {
+    height: 400px;
 }
 
 /* small views */
