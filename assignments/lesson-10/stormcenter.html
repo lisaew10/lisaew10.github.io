@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
-
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description"
-        content="Weather cite - Forecast Trek page for Lisa Student in CIT 230: Web Front-End Development at Brigham Young University-Idaho.">
+    <meta name="description" content="Weather cite - Forecast Trek page for Lisa Student in CIT 230: Web Front-End Development at Brigham Young University-Idaho.">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small-10.css">
     <link rel="stylesheet" href="styles/medium-10.css">
@@ -31,23 +28,18 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <title>Storm Center | Forecast Trek </title>
+    <title>Storm Center | Forecast Trek</title>
 </head>
 
 <body>
     <header class="flex">
-        <div class="logo">
-            <img src="images/weather-icon-png-7.jpg" alt="logo sun with clouds">
-        </div>
+        <div class="logo"><img src="images/weather-icon-png-7.jpg" alt="logo sun with clouds"></div>
         <div>
-            <p>Forecast Trek <br>
-                Weather for every hike!
-            </p>
+            <p>Forecast Trek<br>
+                Weather for every hike!</p>
         </div>
-
     </header>
-    <nav>
-        <button id="hamburgerMenu" onclick="toggleMenu()">&equiv;Menu</button>
+    <nav><button id="hamburgerMenu" onclick="toggleMenu()">≡Menu</button>
         <ul id="menu" class="hide">
             <li><a href="index.html">Home</a></li>
             <li><a href="preston-10.html">Preston</a></li>
@@ -56,83 +48,71 @@
             <li class="active"><a href="#">Storm Center</a></li>
             <li><a href="gallery-10.html">Gallery</a></li>
         </ul>
-
     </nav>
-
-
     <main>
         <h2>Report Storms Here:</h2>
         <img id="stormCenterImg" src="images/SQ_image_stormcenter.jpg" alt="storm over a barn">
-        <form method="GET" action="thanks.html">
-
+        <form method="get" action="thanks.html">
             <fieldset>
-                <legend>About you: </legend>
-                <label class="top">Full Name*<input type="text" name="name" id="name" required
-                        pattern="[a-zA-Z]+[ ][a-zA-Z]+" minlength="5"></label>
-                <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
-                <label class="top">Email <input type="email" name="email" placeholder="storm1234@gmail.com"></label>
-
-                <label class="top">Zip Code* <input type="number" name="zipcode" required></label>
+                <legend>About you:</legend> <label class="top">Full
+                    Name*<input type="text" name="name" id="name" required="" pattern="[a-zA-Z]+[ ][a-zA-Z]+" minlength="5"></label>
+                <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required=""></label>
+                <label class="top">Email
+                    <input type="email" name="email" placeholder="storm1234@gmail.com"></label> <label class="top">Zip
+                    Code*
+                    <input type="number" name="zipcode" required=""></label>
             </fieldset>
             <fieldset>
-                <legend>About the Storm: </legend>
-                <label class="top">Storm Date <input type="date" name="stormDate"></label>
-                <label class="top">Storm Type <input list="stormType" name="stormtype">
-                    <datalist id="stormType">
-
-                        <option value="Flash Flood">
-                        <option value="Hail">
-                        <option value="Hurricane">
-                        <option value="Thunderstorm">
-                        <option value="Tornado">
-                    </datalist>
-
-                </label>
-
-                <div><label class="top" for="rating">Storm Severity Rating (1 to 10):</label></div>
+                <legend>About the Storm:</legend> <label class="top">Storm Date <input type="date" name="stormDate"></label>
+                <label class="top">Storm Type <input list="stormType" name="stormtype"> <datalist id="stormType">
+                        <option value="Flash Flood"></option>
+                        <option value="Hail"></option>
+                        <option value="Hurricane"></option>
+                        <option value="Thunderstorm"></option>
+                        <option value="Tornado"></option>
+                    </datalist></label>
+                <div><label class="top" for="rating">Storm Severity Rating (1 to
+                        10):</label></div>
                 <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)"
-                    onchange="adjustRating(this.value)">
-                <span id="ratingvalue">5</span>
-
-                <label class="top">Storm Region
-                    <select name="selectRegion">
+                    onchange="adjustRating(this.value)"> <span id="ratingvalue">5</span>
+                <label class="top">Storm Region <select name="selectRegion">
                         <option value="">Please Select</option>
                         <option value="preston">Preston</option>
                         <option value="sodasprings">Soda Springs</option>
                         <option value="fishhaven">Fish Haven</option>
-                    </select>
-                </label>
-
+                    </select></label>
                 <div>Are you in the Danger?</div>
-                <label class="sbs"><input type="radio" name="level" value="beginner"> yes</label>
-                <label class="sbs"><input type="radio" name="level" value="intermediate"> maybe</label>
-                <label class="sbs"><input type="radio" name="level" value="advanced"> no</label>
-
-
-                <div> <label>Is there anything else you feel we need to know?</label></div>
-
+                <label class="sbs"><input type="radio" name="level" value="beginner"> yes</label> <label class="sbs"><input
+                        type="radio" name="level" value="intermediate"> maybe</label> <label class="sbs"><input type="radio"
+                        name="level" value="advanced"> no</label>
+                <div><label>Is there anything else you feel we need to
+                        know?</label></div>
                 <textarea name="textarea" rows="10" cols="50"></textarea>
             </fieldset>
             <input type="submit" value="Report Storm" class="submitBtn">
         </form>
-
     </main>
-
-
     <footer>
-        <h3>Contact Information:</h3>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.72628245878!2d-111.9153446480441!3d42.09980531214108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C+ID+83263!5e0!3m2!1sen!2sus!4v1549728631764"
-            frameborder="0" style="border:0" allowfullscreen></iframe>
-        <span id="currentDate"></span>
-        <p>&copy; <span id="copyright-year"></span> | Lisa E. Weber | Forecast Trek <a href="#">Home</a></p>
-
-    </footer>
-    <script src="scripts/currentdate.js"></script>
-    <script src="scripts/hamburger.js"></script>
-    <script src="scripts/windchill.js"></script>
-    <script src="scripts/slider.js"></script>
-
+            <div class="leftcol">
+                <h3>Contact Information:</h3>
+                <p>123-456-7777<br>web18021@byui.edu</p>
+                <p><span id="currentDate"></span><br>
+                    © <span id="copyright-year"></span> | Lisa E. Weber | Forecast
+                    Trek | <a href="index.html">Home</a></p>
+            </div>
+            <div class="rightcol">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.72628245878!2d-111.9153446480441!3d42.09980531214108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C+ID+83263!5e0!3m2!1sen!2sus!4v1549728631764"></iframe>
+            </div>
+        </footer>
+    <script src="scripts/currentdate.js">
+    </script>
+    <script src="scripts/hamburger.js">
+    </script>
+    <script src="scripts/windchill.js">
+    </script>
+    <script src="scripts/slider.js">
+    </script>
 </body>
 
 </html>
