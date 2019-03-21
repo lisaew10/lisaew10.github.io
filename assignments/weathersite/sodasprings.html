@@ -4,7 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta name="description" content="Weather cite - Forecast Trek page for Lisa Student in CIT 230: Web Front-End Development at Brigham Young University-Idaho.">
+    <meta name="description"
+        content="Weather cite - Forecast Trek page for Lisa Student in CIT 230: Web Front-End Development at Brigham Young University-Idaho.">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small-10.css">
     <link rel="stylesheet" href="styles/medium-10.css">
@@ -28,7 +29,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <title>Preston, ID | Forecast Trek</title>
+    <title>Soda Springs, ID | Forecast Trek</title>
 </head>
 
 <body>
@@ -42,19 +43,20 @@
     <nav><button id="hamburgerMenu" onclick="toggleMenu()">≡Menu</button>
         <ul id="menu" class="hide">
             <li><a href="index.html">Home</a></li>
-            <li class="active"><a href="#">Preston</a></li>
-            <li><a href="sodasprings.html">Soda Springs</a></li>
-            <li><a href="fishhaven.html">Fish Haven</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li class="active"><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
             <li><a href="stormcenter.html">Storm Center</a></li>
             <li><a href="gallery.html">Gallery</a></li>
         </ul>
     </nav>
     <main class="contianer">
         <section>
-            <h2>Preston</h2>
+            <h2>Soda Springs</h2>
             <div class="herodiv">
-                <figure><img src="images/default_franklin.jpg" alt="Photo of Preston ID" srcset=" images/franklin-small.jpg 400w, images/franklin-med.jpg 800w, images/franklin-large.jpg 1200w">
-                    <figcaption>Beautiful Preston. ID</figcaption>
+                <figure><img src="images/sodasprings-large.jpg" alt="soda springs idaho geyser"
+                        srcset="images/sodasprings-small.jpg 400w, images/sodasprings-med.jpg 800w, images/sodasprings-large.jpg 1200w">
+                    <figcaption>Soda Springs Geyser</figcaption>
                 </figure>
                 <div class="weathersummary">
                     <h3>Weather Summary</h3>
@@ -64,13 +66,8 @@
                         <div><span>Tempertature:</span> <span id="mainTemp">°
                                 F</span></div>
                         <div><span>Humidity:</span> <span id="humid"></span></div>
-                        <!-- <div>
-                            <span>Precipitation: </span><span id="rain"></span>
-                        </div> -->
                         <div><span>Wind Speed:</span> <span id="windSpeed"></span></div>
-                        <!-- <div>
-                            <img src="images/placeholder.png" alt="current weather" id="weather_icon">
-                        </div> -->
+
                     </div>
                 </div>
             </div>
@@ -106,7 +103,7 @@
         </section>
         <section id="sec1">
             <div class="leftcol">
-                <h1>Rainy Hike</h1>
+                <h1>Hike the Geyer</h1>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Officia inventore voluptate, perspiciatis autem commodi accusantium
                     alias repellat ad nulla, officiis ratione, quos a labore. Veritatis
@@ -116,14 +113,18 @@
                     repellat ut non dolorem odio repellendus officiis debitis
                     cupiditate.</p>
             </div>
-            <div class="rightcol"><img class="img1" src="images/boots-hiking-rain-med.jpg" alt="a view of feet two people wearing boots"
-                    srcset=" images/boots-hiking-rain-small.jpg 400w, images/boots-hiking-rain-med.jpg 800w, images/boots-hiking-rain-large.jpg 1200w"></div>
+            <div class="rightcol"><img class="img1" src="images/hikess-large.jpg"
+                    alt="view of geyer in soda springs"
+                    srcset=" images/hikess-small.jpg 400w, images/hikess-med.jpg 800w, images/hikess-large.jpg 1200w">
+            </div>
         </section>
         <section id="sec2">
-            <div class="leftcol"><img class="img2" src="images/snowfield-med.jpg" alt="light dusting of snow" srcset=" images/snowfield-small.jpg 400w, images/snowfield-med.jpg 800w, images/snowfield-large.jpg 1200w"></div>
+            <div class="leftcol"><img class="img2" src="images/ssdowntown-large.jpg" alt="caribou county courthouse"
+                    srcset=" images/snow field-small.jpg 400w, images/snow field-med.jpg 800w, images/snow field-large.jpg 1200w">
+            </div>
             <div class="rightcol">
-                <h1>Winter Hike</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                <h1>Downtown Hike</h1>
+                <p>Caribou County Courthouse, Soda Springs, Idaho adipisicing
                     elit. Obcaecati nisi est saepe incidunt, dolorem sint facilis
                     maiores ipsum pariatur impedit. Veritatis veniam fugiat minus nisi!
                     Atque beatae nulla quo numquam. Lorem ipsum dolor sit amet
@@ -135,24 +136,23 @@
         </section>
     </main>
     <footer>
-            <div class="leftcol">
-        <h3>Contact Information:</h3>
-        <p>123-456-7777<br>web18021@byui.edu</p>
-        <p><span id="currentDate"></span><br>
-        © <span id="copyright-year"></span> | Lisa E. Weber | Forecast
-            Trek <a href="index.html">Home</a></p>
-            </div>
-            <div class="rightcol">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.72628245878!2d-111.9153446480441!3d42.09980531214108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C+ID+83263!5e0!3m2!1sen!2sus!4v1549728631764"
-            frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div class="leftcol">
+            <h3>Contact Information:</h3>
+            <p>123-456-7777<br>web18021@byui.edu</p>
+            <p><span id="currentDate"></span><br>
+                © <span id="copyright-year"></span> | Lisa E. Weber | Forecast
+                Trek <a href="index.html">Home</a></p>
+        </div>
+        <div class="rightcol">
+                <iframe src="https://www.google.com/maps/d/embed?mid=1W3Hq-55CIIeuZlvwBxqEwpHynVQ" width="640" height="480"></iframe>
         </div>
     </footer>
     <script src="scripts/currentdate.js">
     </script>
     <script src="scripts/hamburger.js">
     </script>
-    <script src="scripts/weatherapi.js">
-    </script> <!-- <script src="scripts/windchill.js"></script> -->
+    <script src="scripts/sodaspringsapi.js">
+    </script>
 </body>
 
 </html>

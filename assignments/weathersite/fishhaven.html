@@ -4,7 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta name="description" content="Weather cite - Forecast Trek page for Lisa Student in CIT 230: Web Front-End Development at Brigham Young University-Idaho.">
+    <meta name="description"
+        content="Weather cite - Forecast Trek page for Lisa Student in CIT 230: Web Front-End Development at Brigham Young University-Idaho.">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small-10.css">
     <link rel="stylesheet" href="styles/medium-10.css">
@@ -28,7 +29,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <title>Preston, ID | Forecast Trek</title>
+    <title>Fish Haven, ID | Forecast Trek</title>
 </head>
 
 <body>
@@ -42,19 +43,21 @@
     <nav><button id="hamburgerMenu" onclick="toggleMenu()">≡Menu</button>
         <ul id="menu" class="hide">
             <li><a href="index.html">Home</a></li>
-            <li class="active"><a href="#">Preston</a></li>
+            <li><a href="preston.html">Preston</a></li>
             <li><a href="sodasprings.html">Soda Springs</a></li>
-            <li><a href="fishhaven.html">Fish Haven</a></li>
+            <li class="active"><a href="#">Fish Haven</a></li>
             <li><a href="stormcenter.html">Storm Center</a></li>
             <li><a href="gallery.html">Gallery</a></li>
         </ul>
     </nav>
     <main class="contianer">
         <section>
-            <h2>Preston</h2>
+            <h2>Fish Haven</h2>
             <div class="herodiv">
-                <figure><img src="images/default_franklin.jpg" alt="Photo of Preston ID" srcset=" images/franklin-small.jpg 400w, images/franklin-med.jpg 800w, images/franklin-large.jpg 1200w">
-                    <figcaption>Beautiful Preston. ID</figcaption>
+                <figure><img src="images/fish-haven-bearlake-large.jpg" height="500px" alt="view of bear lake snow in the mountains"
+                    srcset="images/fish-haven-bearlake-small.jpg 400w, images/fish-haven-bearlake-med.jpg 800w, images/fish-haven-bearlake-large.jpg 1200w">
+
+                    <figcaption>Bear Lake</figcaption>
                 </figure>
                 <div class="weathersummary">
                     <h3>Weather Summary</h3>
@@ -64,13 +67,8 @@
                         <div><span>Tempertature:</span> <span id="mainTemp">°
                                 F</span></div>
                         <div><span>Humidity:</span> <span id="humid"></span></div>
-                        <!-- <div>
-                            <span>Precipitation: </span><span id="rain"></span>
-                        </div> -->
                         <div><span>Wind Speed:</span> <span id="windSpeed"></span></div>
-                        <!-- <div>
-                            <img src="images/placeholder.png" alt="current weather" id="weather_icon">
-                        </div> -->
+
                     </div>
                 </div>
             </div>
@@ -106,9 +104,8 @@
         </section>
         <section id="sec1">
             <div class="leftcol">
-                <h1>Rainy Hike</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Officia inventore voluptate, perspiciatis autem commodi accusantium
+                <h1>Hike Bear Lake</h1>
+                <p>Fish Haven rests along the shores of Bear Lake. The first settlement was established in 1864.
                     alias repellat ad nulla, officiis ratione, quos a labore. Veritatis
                     tempora pariatur tenetur molestias quam. Lorem ipsum dolor, sit
                     amet consectetur adipisicing elit. Expedita quo, corporis, aliquam
@@ -116,14 +113,23 @@
                     repellat ut non dolorem odio repellendus officiis debitis
                     cupiditate.</p>
             </div>
-            <div class="rightcol"><img class="img1" src="images/boots-hiking-rain-med.jpg" alt="a view of feet two people wearing boots"
-                    srcset=" images/boots-hiking-rain-small.jpg 400w, images/boots-hiking-rain-med.jpg 800w, images/boots-hiking-rain-large.jpg 1200w"></div>
+            <div class="rightcol"><img class="img1" src="images/bearlake-large.jpg" alt="view bear lake west side"
+                    srcset=" images/bearlake-small.jpg 400w, images/bearlake-med.jpg 800w, images/bearlake-large.jpg 1200w">
+            </div>
         </section>
         <section id="sec2">
-            <div class="leftcol"><img class="img2" src="images/snowfield-med.jpg" alt="light dusting of snow" srcset=" images/snowfield-small.jpg 400w, images/snowfield-med.jpg 800w, images/snowfield-large.jpg 1200w"></div>
+            <div class="leftcol">
+                <figure><a
+                        href="http://mypubliclands.tumblr.com/post/57165462352/introducing-guest-photo-editor-bob-wick-as-our-my"
+                        target="_blank"><img class="img2" src="images/bird-large.jpg"
+                        alt="caribou county courthouse"
+                        srcset=" images/bird-small.jpg 400w, images/bird-med.jpg 800w, images/bird-large.jpg 1200w"></a>
+                    <figcaption>Photo by Bob Wick</figcaption>
+                </figure>
+            </div>
             <div class="rightcol">
-                <h1>Winter Hike</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                <h1>Wildlife</h1>
+                <p>Birds of prey adipisicing
                     elit. Obcaecati nisi est saepe incidunt, dolorem sint facilis
                     maiores ipsum pariatur impedit. Veritatis veniam fugiat minus nisi!
                     Atque beatae nulla quo numquam. Lorem ipsum dolor sit amet
@@ -135,24 +141,25 @@
         </section>
     </main>
     <footer>
-            <div class="leftcol">
-        <h3>Contact Information:</h3>
-        <p>123-456-7777<br>web18021@byui.edu</p>
-        <p><span id="currentDate"></span><br>
-        © <span id="copyright-year"></span> | Lisa E. Weber | Forecast
-            Trek <a href="index.html">Home</a></p>
-            </div>
-            <div class="rightcol">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.72628245878!2d-111.9153446480441!3d42.09980531214108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C+ID+83263!5e0!3m2!1sen!2sus!4v1549728631764"
-            frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div class="leftcol">
+            <h3>Contact Information:</h3>
+            <p>123-456-7777<br>web18021@byui.edu</p>
+            <p><span id="currentDate"></span><br>
+                © <span id="copyright-year"></span> | Lisa E. Weber | Forecast
+                Trek <a href="index.html">Home</a></p>
+        </div>
+        <div class="rightcol">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11852.955858020145!2d-111.40486807218923!3d42.03805585404865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x875415e9bdab006f%3A0xc1864ed86dd2b0e4!2sFish+Haven%2C+ID+83287!5e0!3m2!1sen!2sus!4v1553198772411"
+                width="600"></iframe>
         </div>
     </footer>
     <script src="scripts/currentdate.js">
     </script>
     <script src="scripts/hamburger.js">
     </script>
-    <script src="scripts/weatherapi.js">
-    </script> <!-- <script src="scripts/windchill.js"></script> -->
+    <script src="scripts/fishhavenapi.js">
+    </script>
 </body>
 
 </html>

@@ -316,7 +316,7 @@ input:required:focus {
     outline: none;
 }
 
-#img1, #img2 {
+.img1, .img2 {
     height: 400px;
 }
 
