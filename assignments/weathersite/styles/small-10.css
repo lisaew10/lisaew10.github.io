@@ -96,6 +96,7 @@ header img {
     position: relative;
     margin: 1.2rem auto;
     max-width: 1200px;
+    
 }
 
 .weathersummary {
@@ -122,12 +123,14 @@ header img {
 }
 
 .leftcol, .rightcol {
-    max-width: 48%;
+    /* max-width: 48%; */
     flex: 1 0 15em;
     padding: 10px;
 }
 
-
+.img1, .img2 {
+    width: 100%;
+}
 nav {
     margin: -1.25em auto 1.25em !important;
     padding: 0 2%;
@@ -143,7 +146,10 @@ ul {
     display: flex;
     flex-direction: column;
 }
-
+a{
+    text-decoration: none;
+    color: white;
+}
 ul li a {
     display: block;
     color: black;
