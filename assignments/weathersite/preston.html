@@ -35,9 +35,15 @@
 <body>
     <header class="flex">
         <div class="logo"><img src="images/weather-icon-png-7.jpg" alt="logo sun with clouds"></div>
+        </div>
         <div>
             <p>Forecast Trek<br>
                 Weather for every hike!</p>
+        <!-- </div>
+        <div id="weatherSumId">
+            <div><img src="images/placeholder.jpg" id="headerIcon" alt="weather icon">
+                <span id="headerTemp"></span>&deg; F
+            </div> -->
         </div>
     </header>
     <nav><button id="hamburgerMenu" onclick="toggleMenu()">≡Menu</button>
@@ -63,16 +69,10 @@
                     <div id="weatherSumId">
                         <div><img src="images/placeholder.jpg" id="summaryIcon" alt="weather icon"></div>
                         <div><span>Currently:</span> <span id="mainWeather"></span></div>
-                        <div><span>Tempertature:</span> <span id="mainTemp">°
-                                F</span></div>
+                        <div><span>Tempertature:</span> <span id="mainTemp"></span> &#8457;</div>
                         <div><span>Humidity:</span> <span id="humid"></span></div>
-                        <!-- <div>
-                            <span>Precipitation: </span><span id="rain"></span>
-                        </div> -->
                         <div><span>Wind Speed:</span> <span id="windSpeed"></span></div>
-                        <!-- <div>
-                            <img src="images/placeholder.png" alt="current weather" id="weather_icon">
-                        </div> -->
+
                     </div>
                 </div>
             </div>
@@ -94,15 +94,15 @@
                 </tr>
                 <tr>
                     <td><img src="images/placeholder.jpg" id="icon0" alt="weather icon"><br>
-                        <span id="temp0"></span>° F</td>
+                        <span id="temp0"></span>&#8457;</td>
                     <td><img src="images/placeholder.jpg" id="icon1" alt="weather icon"><br>
-                        <span id="temp1"></span>° F</td>
+                        <span id="temp1"></span>&#8457;</td>
                     <td><img src="images/placeholder.jpg" id="icon2" alt="weather icon"><br>
-                        <span id="temp2"></span>° F</td>
+                        <span id="temp2"></span>&#8457;</td>
                     <td><img src="images/placeholder.jpg" id="icon3" alt="weather icon"><br>
-                        <span id="temp3"></span>° F</td>
+                        <span id="temp3"></span> &#8457;</td>
                     <td><img src="images/placeholder.jpg" id="icon4" alt="weather icon"><br>
-                        <span id="temp4"></span>° F</td>
+                        <span id="temp4"></span>&#8457;</td>
                 </tr>
             </table>
         </section>
@@ -113,7 +113,8 @@
                     happens -- and even if you were to stay home every time you saw a cloud in the sky, you'd eventually
                     get rained upon while out hiking. Here's how not to suffer when it happens -- and hey, you might
                     even learn to enjoy the new sights, sounds, and smells…" (by Lisa Maloney, ThoughtCo.com, August 6,
-                    2018) <a href="https://www.thoughtco.com/how-to-hike-in-the-rain-1766190" target="blank">continue article</a> </p>
+                    2018) <a href="https://www.thoughtco.com/how-to-hike-in-the-rain-1766190" target="blank">continue
+                        article</a> </p>
             </div>
             <div class="rightcol"><img class="img1" src="images/boots-hiking-rain-med.jpg"
                     alt="a view of feet two people wearing boots"
@@ -126,7 +127,8 @@
             </div>
             <div class="rightcol">
                 <h1>Winter Hike</h1>
-                <p>Do not let the snow stop you from enjoying Idaho. Strap on your snowshoes, and get out to enjoy the delightful change. The plush snow gives a new view to Preston.</p>
+                <p>Do not let the snow stop you from enjoying Idaho. Strap on your snowshoes, and get out to enjoy the
+                    delightful change. The plush snow gives a new view to Preston.</p>
             </div>
         </section>
     </main>
@@ -135,13 +137,12 @@
             <h3>Contact Information:</h3>
             <p>123-456-7777<br>web18021@byui.edu</p>
             <p><span id="currentDate"></span><br>
-                © <span id="copyright-year"></span> | Lisa E. Weber | Forecast
+                &copy;<span id="copyright-year"></span> | Lisa E. Weber | Forecast
                 Trek <a href="index.html">Home</a></p>
         </div>
         <div class="rightcol">
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.72628245878!2d-111.9153446480441!3d42.09980531214108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C+ID+83263!5e0!3m2!1sen!2sus!4v1549728631764"
-                frameborder="0" style="border:0" allowfullscreen></iframe>
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.72628245878!2d-111.9153446480441!3d42.09980531214108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C+ID+83263!5e0!3m2!1sen!2sus!4v1549728631764"></iframe>
         </div>
     </footer>
     <script src="scripts/currentdate.js">
@@ -149,7 +150,9 @@
     <script src="scripts/hamburger.js">
     </script>
     <script src="scripts/weatherapi.js">
-    </script> <!-- <script src="scripts/windchill.js"></script> -->
+    </script>
+    <!-- <script src="scripts/prestontemp.js"></script> -->
+    <!-- <script src="scripts/windchill.js"></script> -->
 </body>
 
 </html>

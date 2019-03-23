@@ -60,12 +60,14 @@ header img {
     color: white;
     border: 12px solid whitesmoke;
     border-style: ridge;
+    background-color: #41413e;
     text-align: center;
     font-size: .9rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 20px;
+
 }
 
 #section {
@@ -239,8 +241,12 @@ table {
 
 /*gallery*/
 
-.gallery-rows {
+#gallery-rows {
     display: grid;
+    
+}
+#contianer #gallery-rows img {
+height: 325px;
 }
 
 #stormCenterImg {
@@ -341,7 +347,7 @@ input:required:focus {
     .weathersummary {
         display: none;
     }
-    .gallery-rows {
+    #gallery-rows {
         display: grid;
         grid-template-row: auto;
     }

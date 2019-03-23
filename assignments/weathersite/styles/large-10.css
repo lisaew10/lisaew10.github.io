@@ -25,7 +25,7 @@
     /* .container {
         flex-direction: row;
     } */
-    .gallery-rows {
+    #gallery-rows {
         grid-template-columns: auto auto auto;
         grid-gap: 10px;
     }
