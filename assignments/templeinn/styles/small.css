@@ -1,0 +1,78 @@
+body {
+    background-color: #ffffff;
+    line-height: 33px;
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    color: black;
+}
+
+body {
+    display: block;
+    margin: 0;
+}
+
+h1,
+h3,
+h2,
+h4,
+h5,
+h6 {
+    
+    font-family: 'Alex Brush', cursive;
+}
+
+header {
+    margin: 0;
+    padding: 0 2%;
+    background-color: #4ba3c7;
+    font-family: 'Alex Brush', cursive;
+    font-size: .8rem;
+    height: 75px;
+}
+
+header img {
+    margin-right: 5rem;
+    height: 5rem;
+}
+
+nav {
+    margin: -1.25em auto 1.25em !important;
+    padding: 0 2%;
+    background-color: #b6ffff;
+    justify-content: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 1.25rem;
+    border-radius: 20px;
+}
+
+nav ul li.active a {
+    background-color: #b6ffff;
+    border-radius: 20px;
+    color: black;
+}
+
+a:hover {
+    background-color: #FAA781;
+    color: black;
+    border-radius: 20px;
+}

@@ -35,7 +35,6 @@ header {
     margin: 0;
     padding: 0 2%;
     background-color: #ffb74d;
-    /* box-shadow: 0 0 30px #777; */
     font-family: 'Muli', sans-serif;
     font-size: .8rem;
     height: 125px;
@@ -73,8 +72,7 @@ header img {
 #section {
     display: grid;
     grid-template-columns: 1fr;
-    /* grid-column-gap: 10px; */
-}
+    }
 
 #section article p:first-of-type {
     font-style: italic;
