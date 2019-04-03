@@ -60,9 +60,47 @@
     </nav>
 
     <main>
-
-        <h1> this is a test</h1>
-        <p>paragraph</p>
+        <h1>Book Your Stay:</h1>
+        
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>About you:</legend> <label class="top">Full
+                    Name*<input type="text" name="name" id="name" required="" pattern="[a-zA-Z]+[ ][a-zA-Z]+" minlength="5"></label>
+                <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required=""></label>
+                <label class="top">Email*
+                    <input type="email" name="email" placeholder="temple1234@gmail.com" required=""></label> <label class="top">Zip
+                    Code
+                    <input type="number" name="zipcode"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Reservation:</legend> <label class="top">Date <input type="date" name="stormDate"></label>
+                <label class="top">Reservation Type <input list="reservationType" name="reservationtype"> <datalist id="reservationType">
+                        <option value="Standard Stay"></option>
+                        <option value="Long-term Stay"></option>
+                        <option value="Wedding Reception Hall"></option>
+                        
+                        <option value="Short-term Childcare"></option>
+                    </datalist></label>
+                <div><label class="top" for="rating">Short-term Stay - Number of nights (1 to
+                        20):</label></div>
+                <input type="range" id="rating" value="10" min="1" max="20" step="1" oninput="adjustRating(this.value)"
+                    onchange="adjustRating(this.value)"> <span id="ratingvalue">10</span>
+                <label class="top">Temple<select name="selectTemple">
+                        <option value="">Please Select</option>
+                        <option value="washingtondc">Washington DC</option>
+                        <option value="hartford">Hartford, CT</option>
+                        <option value="manhattan">Manhattan, NY</option>
+                        <option value="columbia">Columbia, SC</option>
+                    </select></label>
+                <div>Need help with Family History?</div>
+                <label class="sbs"><input type="radio" name="level" value="beginner"> yes</label> <label class="sbs"><input
+                        type="radio" name="level" value="intermediate"> maybe</label> <label class="sbs"><input type="radio"
+                        name="level" value="advanced"> no</label>
+                <div><label>Long-term stay? Select above and tell us the dates along with any special accommodations:</label></div>
+                <textarea name="textarea" rows="10" cols="75"></textarea>
+            </fieldset>
+            <input type="submit" value="Send Information" class="submitBtn">
+        </form>
     </main>
 
     <footer>
