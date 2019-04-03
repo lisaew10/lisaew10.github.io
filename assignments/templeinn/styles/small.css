@@ -1,3 +1,9 @@
+* {
+    -moz-boz-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 body {
     background-color: #ffffff;
     line-height: 33px;
@@ -17,17 +23,26 @@ h2,
 h4,
 h5,
 h6 {
-    
+
     font-family: 'Alex Brush', cursive;
 }
 
 header {
     margin: 0;
-    padding: 0 2%;
+    padding: 1rem 2%;
     background-color: #4ba3c7;
-    font-family: 'Alex Brush', cursive;
-    font-size: .8rem;
-    height: 75px;
+    /* font-size: .8rem; */
+    height: 110px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 1rem;
+    font-family: 'Arimo', sans-serif;
 }
 
 header img {
@@ -66,13 +81,50 @@ ul li a {
 }
 
 nav ul li.active a {
-    background-color: #b6ffff;
+    background-color: #babdbe;
     border-radius: 20px;
-    color: black;
+    color: #b6ffff;
 }
 
 a:hover {
     background-color: #FAA781;
     color: black;
     border-radius: 20px;
+}
+
+.flex {
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: center;
+    color: black;
+}
+header .logo {
+    margin: 0 -4.25rem -3rem 0;
+}
+
+@media (max-width: 550px) {
+    .hide {
+        display: none;
+    }
+
+    nav {
+        background-color: #b6ffff;
+    }
+
+    #hamburgerMenu {
+        display: block;
+    }
+
+    .weathersummary {
+        display: none;
+    }
+
+    #gallery-rows {
+        display: grid;
+        grid-template-row: auto;
+    }
+
+    #stormCenterImg {
+        display: none;
+    }
 }
