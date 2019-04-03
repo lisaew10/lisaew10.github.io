@@ -8,6 +8,10 @@
 
         max-width: 1200px;
     }
+    header img {
+        
+        height: 5rem;
+    }
 
     .shadow:hover {
         box-shadow: 0 0 50px rgb(49, 46, 58);
