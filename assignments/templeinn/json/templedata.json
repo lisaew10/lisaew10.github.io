@@ -1,0 +1,160 @@
+[
+    {
+        "temple": "Columbia South Carolina Temple",
+        "addressLine1": "2905 Trotter Rd",
+        "addressLine2": "Hopkins, SC 29061",
+        "phone": "(1) 803-647-9472",
+        "service1": "No clothing rental available",
+        "service2": "No cafeteria available",
+        "service3": "No patron housing available",
+        "service4": "Distribution center nearby",
+        "closures": [
+            {
+                "start": "2019-04-06",
+                "end": "2019-04-06"
+            },
+            {
+                "start": "2019-06-18",
+                "end": "2019-07-01"
+            },
+            {
+                "start": "2019-07-04",
+                "end": "2019-07-04"
+            },
+            {
+                "start": "2019-10-05",
+                "end": "2019-10-05"
+            },
+            {
+                "start": "2019-11-28",
+                "end": "2019-11-28"
+            },
+            {
+                "start": "2019-12-24",
+                "end": "2019-12-26"
+            },
+            {
+                "start": "2019-12-31",
+                "end": "2020-01-13"
+            }
+        ]
+    },
+    {
+        "temple": "Boston Massachusetts Temple",
+        "addressLine1": "100 Hinckley Wy",
+        "addressLine2": "Belmont, MA 02478",
+        "phone": "(1) 617-993-9993",
+        "service1": "Clothing rental available",
+        "service2": "No cafeteria available",
+        "service3": "No patron housing available",
+        "service4": "Distribution center nearby",
+        "closures": [
+            {
+                "start": "2019-04-06",
+                "end": "2019-04-06"
+            },
+            {
+                "start": "2019-07-04",
+                "end": "2019-07-04"
+            },
+            {
+                "start": "2019-07-08",
+                "end": "2019-07-22"
+            },
+            {
+                "start": "2019-10-05",
+                "end": "2019-10-05"
+            },
+            {
+                "start": "2019-11-27",
+                "end": "2019-11-28"
+            },
+            {
+                "start": "2019-12-24",
+                "end": "2019-12-26"
+            },
+            {
+                "start": "2019-12-31",
+                "end": "2020-01-01"
+            }
+        ]
+    },
+    {
+        "temple": "Manhattan New York Temple",
+        "addressLine1": "125 Columbus Ave, Fourth Floor",
+        "addressLine2": "New York, NY 10023",
+        "phone": "(1) 917-441-8220",
+        "service1": "Clothing rental available",
+        "service2": "No cafeteria available",
+        "service3": "No patron housing available",
+        "service4": "Distribution center nearby",
+        "closures": [
+            {
+                "start": "2019-04-06",
+                "end": "2019-04-06"
+            },
+            {
+                "start": "2019-07-04",
+                "end": "2019-07-04"
+            },
+            {
+                "start": "2019-07-23",
+                "end": "2019-10-28"
+            },
+            {
+                "start": "2019-11-27",
+                "end": "2019-11-28"
+            },
+            {
+                "start": "2019-12-24",
+                "end": "2019-12-26"
+            },
+            {
+                "start": "2019-12-31",
+                "end": "2020-01-13"
+            }
+        ]
+    },
+    {
+        "temple": "Philadelphia Pennsylvania Temple",
+        "addressLine1": "1739 Vine St",
+        "addressLine2": "Philadelphia, PA 19103",
+        "phone": "(1) 215-398-3040",
+        "service1": "Clothing rental available",
+        "service2": "No cafeteria available",
+        "service3": "No patron housing available",
+        "service4": "Distribution center nearby",
+       
+         
+            "closures": [
+                {
+                    "start": "2019-04-06",
+                    "end": "2019-04-06"
+                },
+                {
+                    "start": "2019-07-04",
+                    "end": "2019-07-04"
+                },
+                {
+                    "start": "2019-09-16",
+                    "end": "2019-09-30"
+                },
+                {
+                    "start": "2019-10-05",
+                    "end": "2019-10-05"
+                },
+                {
+                    "start": "2019-11-28",
+                    "end": "2019-11-28"
+                },
+                {
+                    "start": "2019-12-24",
+                    "end": "2019-12-26"
+                },
+                {
+                    "start": "2019-12-31",
+                    "end": "2020-01-13"
+                }
+            ]
+        }
+]
