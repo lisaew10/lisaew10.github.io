@@ -58,7 +58,7 @@ request.onload = function () {
 // Manhattan
   document.getElementById("templeMan").innerHTML = templeData[2].temple;
   document.getElementById("addressMan").innerHTML = templeData[2].addressLine1;
-  document.getElementById("addresssMan").innerHTML = templeData[2].addressLine2;
+  document.getElementById("addresssbMan").innerHTML = templeData[2].addressLine2;
   document.getElementById("phoneMan").innerHTML = templeData[2].phone;
   document.getElementById("serviceAMan").innerHTML = templeData[2].service1;
   document.getElementById("serviceBMan").innerHTML = templeData[2].service2;

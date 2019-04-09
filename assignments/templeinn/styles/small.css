@@ -17,12 +17,7 @@ body {
     margin: 0;
 }
 
-h1,
-h3,
-h2,
-h4,
-h5,
-h6 {
+h1, h3, h2, h4, h5, h6 {
     font-family: 'Alex Brush', cursive;
 }
 
@@ -39,11 +34,9 @@ header h1 {
 }
 
 header h2 {
-
     font-size: 1rem;
     font-family: 'Arimo', sans-serif;
 }
-
 
 header img {
     margin-right: 5rem;
@@ -121,7 +114,6 @@ figcaption {
     position: relative;
     margin: 1.2rem auto;
     max-width: 1200px;
-
 }
 
 .buttoncta {
@@ -148,16 +140,13 @@ footer h1 {
     margin: 0;
 }
 
-footer a,
-footer a:visited {
+footer a, footer a:visited {
     color: black;
 }
 
-footer a:hover,
-footer a:active {
+footer a:hover, footer a:active {
     background-color: #FAA781;
     border-radius: 15px;
-
 }
 
 .flex {
@@ -166,28 +155,69 @@ footer a:active {
     color: black;
 }
 
+section article {
+    width: 33%;
+    float: left;
+}
+
+section p {
+    margin: 5px 0;
+}
+
+section ul {
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.flexContainer {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+/* .flexTemple {
+   
+    padding: 5px;
+    width: 200px;
+    height: 150px;
+    margin-top: 10px; 
+    
+  } */
+main div img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    width: 400px;
+    height: 400px;
+}
+
+main div h1 {
+    text-align: center;
+}
+
 @media (max-width: 550px) {
     .hide {
         display: none;
     }
-
     nav {
         background-color: #b6ffff;
     }
-
     #hamburgerMenu {
         display: block;
     }
-
     .weathersummary {
         display: none;
     }
-
     .buttoncta {
         top: 10px;
         right: 10px;
     }
-
     /* #gallery-rows {
         display: grid;
         grid-template-row: auto;
