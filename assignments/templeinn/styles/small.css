@@ -63,7 +63,8 @@ ul {
 
 a {
     text-decoration: none;
-    color: white;
+ 
+    color: black;
     padding: 1rem;
 }
 #attribution a {
