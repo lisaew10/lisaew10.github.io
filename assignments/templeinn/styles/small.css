@@ -117,7 +117,7 @@ figcaption {
     padding: 20px;
 }
 
-#sec1, #sec2, #thankyou, footer {
+.sec1, .sec2, #thankyou, footer {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
