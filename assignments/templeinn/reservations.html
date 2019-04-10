@@ -39,7 +39,7 @@
 <body>
     <header class="flex">
         <div class="logo">
-           <img src="images/mormon-155293_640.png" alt="logo outline of temple in salt lake city utah usa">
+            <img src="images/mormon-155293_640.png" alt="logo outline of temple in salt lake city utah usa">
         </div>
         <div>
             <h1>Temple Inn & Suites</h1>
@@ -54,13 +54,16 @@
             <li class="active"><a href="#">Reservations</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="contact.html">Contact</a></li>
-            
+
         </ul>
 
     </nav>
 
     <main>
+
+
         <h1>Book Your Stay:</h1>
+        <img id="templeRes" src="images/manhattan-temple-SQ-med.jpg" alt="storm over a barn">
 
         <form method="get" action="thanks.html">
             <fieldset>
@@ -75,20 +78,20 @@
                     <input type="number" name="zipcode"></label>
             </fieldset>
             <fieldset>
-                <legend>Reservation:</legend> <label class="top">Date <input type="date" name="stormDate"></label>
+                <legend>Reservation:</legend> <label class="top">Arival:<input type="date" name="startDate"></label>
+                <label class="top">Check Out:<input type="date" name="checkoutDate"></label>
                 <label class="top">Reservation Type <input list="reservationType" name="reservationtype"> <datalist
                         id="reservationType">
                         <option value="Standard Stay"></option>
                         <option value="Long-term Stay"></option>
                         <option value="Wedding Reception Hall"></option>
-
                         <option value="Short-term Childcare"></option>
                     </datalist></label>
-                <div><label class="top" for="rating">Short-term Stay - Number of nights (1 to
+                <div><label class="top" for="rating">How many in your group (1 to
                         20):</label></div>
                 <input type="range" id="rating" value="10" min="1" max="20" step="1" oninput="adjustRating(this.value)"
                     onchange="adjustRating(this.value)"> <span id="ratingvalue">10</span>
-                <label class="top">Temple<select name="selectTemple">
+                <label class="top">Temple Inn & Suites Location:<select name="selectTemple">
                         <option value="">Please Select</option>
                         <option value="boston">Boston, MA</option>
                         <option value="columbia">Columbia, SC</option>
@@ -100,13 +103,19 @@
                 <label class="sbs"><input type="radio" name="level" value="beginner"> yes</label> <label
                     class="sbs"><input type="radio" name="level" value="intermediate"> maybe</label> <label
                     class="sbs"><input type="radio" name="level" value="advanced"> no</label>
-                <div><label>Long-term stay? Select above and tell us the dates along with any special
-                        accommodations:</label></div>
+                <div><label>Additional Information:</label></div>
                 <textarea name="textarea" rows="10" cols="75"></textarea>
             </fieldset>
             <input type="submit" value="Send Information" class="submitBtn">
         </form>
-        
+        <h1>Reception Hall:</h1>
+        <p>We are thrilled that you have chosen us for your wedding reception! After the completion of the form, a
+            reception specialist will contact you to gather details. This individual will be your contact throughout the
+            process. They will help you build the perfect reception for your wedding.</p>
+        <h1>Full-time Missionaries:</h1>
+        <p>Thank you for your desire to stay with us during your missionary service. Once the above form is received a
+            moving specialist will reach out to you to finalize your stay. You will have the same moving specialist
+            throughout the moving process. </p>
     </main>
 
     <footer>
@@ -126,6 +135,8 @@
     </footer>
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/hamburger.js"></script>
+    <script src="scripts/slider.js">
+    </script>
 </body>
 
 </html>
