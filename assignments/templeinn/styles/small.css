@@ -63,10 +63,10 @@ ul {
 
 a {
     text-decoration: none;
- 
     color: black;
     padding: 1rem;
 }
+
 #attribution a {
     color: black;
 }
@@ -120,7 +120,11 @@ figcaption {
     flex: 1 0 15em;
     padding: 20px;
 }
-.leftcol {text-align: right;}
+
+.leftcol {
+    text-align: right;
+}
+
 .sec1, .sec2, #thankyou, footer {
     display: flex;
     flex-flow: row wrap;
@@ -151,7 +155,6 @@ figcaption {
     margin: auto;
 }
 
-
 .buttoncta {
     position: absolute;
     top: 90px;
@@ -164,6 +167,48 @@ figcaption {
     box-shadow: 0 0 30px #fff;
     font-size: 20px;
 }
+
+/* Contact us Page */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.innerSocial .fab {
+    margin: 0 20px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.innerAddress p {
+    font-size: 15px;
+}
+
+.innerAddress .fas {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.wrapper {
+    max-width: 800px;
+    margin: 50px auto;
+    background: #81d4fa;
+    box-sizing: border-box;
+    padding: 80px;
+    box-shadow: 0 0 5px rgba(209, 46, 46, 0.5);
+}
+
+
 
 footer {
     background-color: #4ba3c7;
@@ -229,18 +274,19 @@ main div img {
 main div h1 {
     text-align: center;
 }
+
 #templeRes {
     display: block;
     float: right;
     width: 50%;
     margin: 10% 2%;
 }
+
 /* FORM */
 
 form fieldset {
     margin: 2rem 0;
     border: none;
-    
     padding: .5rem 2%;
 }
 
@@ -256,7 +302,6 @@ form legend {
 form label.top, form div {
     display: block;
     padding-top: 1rem;
-   
     font-size: 1rem;
 }
 
@@ -288,12 +333,11 @@ textarea {
 form label.sbs {
     display: block;
     padding: .60rem 0;
-   
 }
 
 form input.submitBtn {
     border: none;
-    background-color: #81d4fa;
+    background-color: #babdbe;
     color: black;
     border-radius: 1rem;
     padding: .75rem 1.5rem;
@@ -305,12 +349,13 @@ form input.submitBtn {
 input:required:focus {
     border: 2px solid red;
     outline: none;
-    flex-grow:2;
+    flex-grow: 2;
 }
 
 .img1, .img2 {
     height: 400px;
 }
+
 @media (max-width: 550px) {
     .hide {
         display: none;
@@ -321,10 +366,8 @@ input:required:focus {
     #hamburgerMenu {
         display: block;
     }
-   
     .buttoncta {
         top: 10px;
         right: 10px;
     }
-   
 }

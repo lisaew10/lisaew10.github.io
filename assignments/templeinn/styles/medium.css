@@ -18,7 +18,12 @@
 
 
     header h1 { font-size: 2.5rem;}
-  
+    .address {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+       
+    }
 
     .logo {
         margin: 1.25rem -4.5rem 1.25rem;
