@@ -33,13 +33,13 @@
     <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-    <title>Temple Inn and Suites | 123-454-5566</title>
+    <title>Thank you</title>
 </head>
 
 <body>
     <header class="flex">
         <div class="logo">
-           <img src="images/mormon-155293_640.png" alt="logo outline of temple in salt lake city utah usa">
+            <img src="images/mormon-155293_640.png" alt="logo outline of temple in salt lake city utah usa">
         </div>
         <div>
             <h1>Temple Inn & Suites</h1>
@@ -51,62 +51,29 @@
         <ul id="menu" class="hide">
             <li><a href="index.html">Home</a></li>
             <li><a href="temples.html">Temples</a></li>
-            <li class="active"><a href="#">Reservations</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="contact.html">Contact</a></li>
-            
+
         </ul>
 
     </nav>
 
     <main>
-        <h1>Book Your Stay:</h1>
 
-        <form method="get" action="thanks.html">
-            <fieldset>
-                <legend>About you:</legend> <label class="top">Full
-                    Name*<input type="text" name="name" id="name" required="" pattern="[a-zA-Z]+[ ][a-zA-Z]+"
-                        minlength="5"></label>
-                <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required=""></label>
-                <label class="top">Email*
-                    <input type="email" name="email" placeholder="temple1234@gmail.com" required=""></label> <label
-                    class="top">Zip
-                    Code
-                    <input type="number" name="zipcode"></label>
-            </fieldset>
-            <fieldset>
-                <legend>Reservation:</legend> <label class="top">Date <input type="date" name="stormDate"></label>
-                <label class="top">Reservation Type <input list="reservationType" name="reservationtype"> <datalist
-                        id="reservationType">
-                        <option value="Standard Stay"></option>
-                        <option value="Long-term Stay"></option>
-                        <option value="Wedding Reception Hall"></option>
+        <section>
+            <h2>Thank you! Your reservations have been recieved.</h2><p>Questions? Please call: 800-Inn-7777</p>
+            <div class="herodiv">
+                <figure><img src = "images/boston-temple-lds-large.jpg"
+                        alt="Photo of Boston Temple for the Church of Jesus Christ of latter day saints"
+                        srcset=" images/boston-temple-lds-small.jpg 400w, images/boston-temple-lds-med.jpg 800w, images/boston-temple-lds-large.jpg 1200w">
+                    <figcaption>Philadelphia Pennsylvania Temple</figcaption>
+                </figure>
+             
 
-                        <option value="Short-term Childcare"></option>
-                    </datalist></label>
-                <div><label class="top" for="rating">Short-term Stay - Number of nights (1 to
-                        20):</label></div>
-                <input type="range" id="rating" value="10" min="1" max="20" step="1" oninput="adjustRating(this.value)"
-                    onchange="adjustRating(this.value)"> <span id="ratingvalue">10</span>
-                <label class="top">Temple<select name="selectTemple">
-                        <option value="">Please Select</option>
-                        <option value="boston">Boston, MA</option>
-                        <option value="columbia">Columbia, SC</option>
-                        <option value="manhattan">Manhattan, NY</option>
-                        <option value="philadelphia">Philadelphia, PA</option>
-                        <!-- <option value="washingtondc">Washington DC</option> -->
-                    </select></label>
-                <div>Need help with Family History?</div>
-                <label class="sbs"><input type="radio" name="level" value="beginner"> yes</label> <label
-                    class="sbs"><input type="radio" name="level" value="intermediate"> maybe</label> <label
-                    class="sbs"><input type="radio" name="level" value="advanced"> no</label>
-                <div><label>Long-term stay? Select above and tell us the dates along with any special
-                        accommodations:</label></div>
-                <textarea name="textarea" rows="10" cols="75"></textarea>
-            </fieldset>
-            <input type="submit" value="Send Information" class="submitBtn">
-        </form>
-        
+            </div>
+        </section>
+       
     </main>
 
     <footer>
