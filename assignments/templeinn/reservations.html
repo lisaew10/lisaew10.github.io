@@ -62,9 +62,12 @@
     <main>
 
 
-        <h1>Book Your Stay:</h1><p>Questions? Please call: 800-Inn-7777</p>
-        <img id="templeRes" src="images/manhattan-temple-SQ-med.jpg" alt="storm over a barn">
-
+        <h1>Book Your Stay:</h1>
+        <p>Questions? Please call: 800-Inn-7777</p>
+       <figure id="templeRes">
+            <img src="images/towelFlower-med.jpg" alt="hotel towel with rose">
+           <figcaption> <a href="https://pixabay.com/photos/towel-rose-clean-care-salon-spa-759980/">Photo Credit Pixabay</a></figcaption>
+        </figure>
         <form method="get" action="thanks.html">
             <fieldset>
                 <legend>About you:</legend> <label class="top">Full
@@ -80,7 +83,8 @@
             <fieldset>
                 <legend>Reservation:</legend> <label class="top">Arival:<input type="date" name="startDate"></label>
                 <label class="top">Check Out:<input type="date" name="checkoutDate"></label>
-                <label class="top">Reservation Type <input list="reservationType" name="reservationtype"> <datalist
+                <label class="top">
+                    Reservation Type <input list="reservationType" name="reservationtype"> <datalist
                         id="reservationType">
                         <option value="Standard Stay"></option>
                         <option value="Long-term Stay"></option>
@@ -88,17 +92,29 @@
                         <option value="Short-term Childcare"></option>
                     </datalist></label>
                 <div><label class="top" for="rating">How many in your group (1 to
-                        20):</label></div>
-                <input type="range" id="rating" value="10" min="1" max="20" step="1" oninput="adjustRating(this.value)"
-                    onchange="adjustRating(this.value)"> <span id="ratingvalue">10</span>
-                <label class="top">Temple Inn & Suites Location:<select name="selectTemple">
-                        <option value="">Please Select</option>
+                        8):</label></div>
+                <input type="range" id="rating" value="4" min="1" max="8" step="1" oninput="adjustRating(this.value)"
+                    onchange="adjustRating(this.value)"> <span id="ratingvalue">8</span>
+                <label class="top">
+                    Temple Inn & Suites Location:<select name="selectTemple">
+                        <option value="">Location &#9662;</option>
                         <option value="boston">Boston, MA</option>
                         <option value="columbia">Columbia, SC</option>
                         <option value="manhattan">Manhattan, NY</option>
                         <option value="philadelphia">Philadelphia, PA</option>
                         <!-- <option value="washingtondc">Washington DC</option> -->
                     </select></label>
+                <label class="top">Room Request
+                    <select name="room" required>
+                        <option value="">Select Room &#9662;</option>
+                        <option value="singleKing">Single King - Sleeps 2</option>
+                        <option value="doubleQueen">Double Queen - Sleep 4</option>
+                        <option value="doubleQueenSofa">Double Queen plus Sofa Bed - Sleeps 6</option>
+                        <option value="suite">Suite - Sleeps 6 - Kitchenette</option>
+                        <option value="deluxeSuite">Deluxe Suite - Sleep 8 - Kitchenette</option>
+                        <option value="studioAppartment">Full-time Missionary Studio Apartment</option>
+                    </select>
+                </label>
                 <div>Need help with Family History?</div>
                 <label class="sbs"><input type="radio" name="level" value="beginner"> yes</label> <label
                     class="sbs"><input type="radio" name="level" value="intermediate"> maybe</label> <label
@@ -108,11 +124,12 @@
             </fieldset>
             <input type="submit" value="Send Information" class="submitBtn">
         </form>
-        <h1>Reception Hall:</h1>
+        <h2><a href="receptions.html" target = "_blank">Wedding Receptions:</a></h2>
         <p>We are thrilled that you have chosen us for your wedding reception! After the completion of the form, a
-            reception specialist will contact you to further assist you. This individual will be your contact throughout the
+            reception specialist will contact you to further assist you. This individual will be your contact throughout
+            the
             process. They will help you build the perfect reception for your wedding.</p>
-        <h1>Full-time Missionaries:</h1>
+        <h2><a href="missionaryft.html" target="_blank">Full-time Missionary Housing:</h2>
         <p>Thank you for your desire to stay with us during your missionary service. Once the above form is received a
             moving specialist will reach out to you to finalize your stay. You will have the same moving specialist
             throughout the moving process. </p>
