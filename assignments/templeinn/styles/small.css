@@ -38,6 +38,7 @@ header img {
 header .logo {
 	margin: 0 -4.25rem -3rem 0
 }
+
 nav {
 	margin: -1.25em auto 1.25em !important;
 	padding: 0 2%;
@@ -175,10 +176,13 @@ figcaption {
 	box-shadow: 0 0 5px rgba(209, 46, 46, 0.5)
 }
 footer {
-	background-color: #4ba3c7;
+	background-color: #babdbe;
 	padding: .5rem 2%;
 	color: black;
 	font-size: .9rem
+}
+footer .logo {
+	margin: 1rem .25rem 1rem 1rem;
 }
 footer h1 {
 	margin: 0
