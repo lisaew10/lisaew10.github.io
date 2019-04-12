@@ -20,7 +20,7 @@ h1, h3, h2, h4, h5, h6 {
 header {
 	margin: 0;
 	padding: 1rem 2%;
-	background-color: #4ba3c7;
+	background-color: #81d4fa;;
 	height: 110px
 }
 header h1 {
@@ -69,7 +69,7 @@ ul li a {
 	border-radius: 20px
 }
 nav ul li.active a {
-	background-color: #babdbe;
+	background-color: #4ba3c7;
 	border-radius: 20px;
 	color: #b6ffff
 }
