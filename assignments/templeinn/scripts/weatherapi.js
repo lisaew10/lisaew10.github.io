@@ -1,4 +1,3 @@
-//current weather Columbia
 function getWeather(zipCode) {
 
 
@@ -15,32 +14,25 @@ function getWeather(zipCode) {
         weatherRequest.onload = function () {
                 var weatherData = weatherRequest.response;
                 if (zipCode === '29061') {
-
-
                         document.getElementById('mainWeather').innerHTML = weatherData.weather[0].main;
                         document.getElementById('mainTemp').innerHTML = weatherData.main.temp;
                         document.getElementById('humid').innerHTML = weatherData.main.humidity;
                         document.getElementById('windSpeed').innerHTML = weatherData.wind.speed;
-                }
-                else if (zipCode === '19103'){
+                } else if (zipCode === '19103') {
                         document.getElementById('mainWeatherPhi').innerHTML = weatherData.weather[0].main;
                         document.getElementById('mainTempPhi').innerHTML = weatherData.main.temp;
                         document.getElementById('humidPhi').innerHTML = weatherData.main.humidity;
                         document.getElementById('windSpeedPhi').innerHTML = weatherData.wind.speed;
-                
-
-                }
-                else if (zipCode === '02478'){
+                } else if (zipCode === '02478') {
                         document.getElementById('mainWeatherBos').innerHTML = weatherData.weather[0].main;
-        document.getElementById('mainTempBos').innerHTML = weatherData.main.temp;
-        document.getElementById('humidBos').innerHTML = weatherData.main.humidity;
-        document.getElementById('windSpeedBos').innerHTML = weatherData.wind.speed;
-                }
-                else if (zipCode === '10023') {
+                        document.getElementById('mainTempBos').innerHTML = weatherData.main.temp;
+                        document.getElementById('humidBos').innerHTML = weatherData.main.humidity;
+                        document.getElementById('windSpeedBos').innerHTML = weatherData.wind.speed;
+                } else if (zipCode === '10023') {
                         document.getElementById('mainWeatherMan').innerHTML = weatherData.weather[0].main;
-        document.getElementById('mainTempMan').innerHTML = weatherData.main.temp;
-        document.getElementById('humidMan').innerHTML = weatherData.main.humidity;
-        document.getElementById('windSpeedMan').innerHTML = weatherData.wind.speed;
+                        document.getElementById('mainTempMan').innerHTML = weatherData.main.temp;
+                        document.getElementById('humidMan').innerHTML = weatherData.main.humidity;
+                        document.getElementById('windSpeedMan').innerHTML = weatherData.wind.speed;
 
                 }
         }
