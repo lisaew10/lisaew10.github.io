@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description"
+        content="Weather cite - Forecast Trek page for Lisa Student in CIT 230: Web Front-End Development at Brigham Young University-Idaho.">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small-9.css">
+    <link rel="stylesheet" href="styles/medium-9.css">
+    <link rel="stylesheet" href="styles/large-9.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora|Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Prosto+One" rel="stylesheet">
+
+    <title>Forecast Trek </title>
+</head>
+
+
+<header class="flex">
+    <div class="logo">
+        <img src="images/weather-icon-png-7.jpg" alt="logo sun with clouds">
+    </div>
+    <div>
+        <p>Forecast Trek <br>
+            Weather for every hike!
+        </p>
+    </div>
+</header>
+<nav>
+    <button id="hamburgerMenu" onclick="toggleMenu()">&equiv;Menu</button>
+    <ul id="menu" class="hide">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="preston-9.html">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery-9.html">Gallery</a></li>
+    </ul>
+
+</nav>
+
+<body>
+    <main>
+        <section id='section'>
+           
+
+        </section>
+
+    </main>
+
+</body>
+<footer>
+    <h3>Contact Information:</h3>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.72628245878!2d-111.9153446480441!3d42.09980531214108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C+ID+83263!5e0!3m2!1sen!2sus!4v1549728631764"
+        frameborder="0" style="border:0" allowfullscreen></iframe>
+    <span id="currentDate"></span>
+    <p>&copy; <span id="copyright-year"></span> | Lisa E. Weber | Forecast Trek <a href="#">Home</a></p>
+
+</footer>
+<script src="scripts/currentdate.js"></script>
+<script src="scripts/hamburger.js"></script>
+<script src="scripts/windchill.js"></script>
+<script src="scripts/towndata.js"></script>
+
+
+</body>
+
+</html>

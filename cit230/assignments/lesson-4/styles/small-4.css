@@ -1,0 +1,94 @@
+/* html selectors */
+
+* {
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #758497;
+  line-height: 35px;
+  font-family: Montserrat, sans-serif;
+  color: #eae7ae;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: white;
+  font-family: 'Lora', serif;
+}
+
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+p {
+  font-size: 1em
+}
+
+header {
+  margin: 10px auto;
+  background-color: #c6bc8d;
+  border: 1px solid #758497;
+  box-shadow: 0 0 30px #777;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+}
+
+header img {
+  float: middle;
+  height: 150px;
+}
+
+a:link, a:visited {
+  background-color: #758497;
+  color: white;
+  padding: 14px 2px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+}
+
+a:hover, a:active {
+  background-color: #abcde2;
+}
+
+/* class selectors */
+
+.motto {
+  font-family: Montserrat, sans-serif;
+  border-radius: .2px;
+  font-size: 16pt;
+  background-color: #9c8565;
+}
+
+/* Remove list bullets */
+
+ul {
+  list-style: none;
+}
+
+/* id selectors */

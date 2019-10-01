@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description"
+        content="Weather cite - Forecast Trek page for Lisa Student in CIT 230: Web Front-End Development at Brigham Young University-Idaho.">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora|Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Prosto+One" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="scripts/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>Soda Springs, ID | Forecast Trek</title>
+</head>
+
+<body>
+    <header class="flex">
+        <div class="logo"><img src="images/weather-icon-png-7.jpg" alt="logo sun with clouds"></div>
+        <div>
+            <p>Forecast Trek<br>
+                Weather for every hike!</p>
+        </div>
+    </header>
+    <nav><button id="hamburgerMenu" onclick="toggleMenu()">≡Menu</button>
+        <ul id="menu" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li class="active"><a href="#">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main class="contianer">
+        <section>
+            <h2>Soda Springs</h2>
+            <div class="herodiv">
+                <figure><img src="images/sodasprings-large.jpg" alt="soda springs idaho geyser"
+                        srcset="images/sodasprings-small.jpg 400w, images/sodasprings-med.jpg 800w, images/sodasprings-large.jpg 1200w">
+                    <figcaption>Soda Springs Geyser</figcaption>
+                </figure>
+                <div class="weathersummary">
+                    <h3>Weather Summary</h3>
+                    <div id="weatherSumId">
+                        <div><img src="images/placeholder.jpg" id="summaryIcon" alt="weather icon"></div>
+                        <div><span>Currently:</span> <span id="mainWeather"></span></div>
+                        <div><span>Tempertature:</span> <span id="mainTemp">&#8457;</span></div>
+                        <div><span>Humidity:</span> <span id="humid"></span></div>
+                        <div><span>Wind Speed:</span> <span id="windSpeed"></span></div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="fiveForecast"></div>
+            <table style="width:40%">
+                <thead>
+                    <tr>
+                        <th colspan="5">5-Day Forecast</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <th id="day0"></th>
+                    <th id="day1"></th>
+                    <th id="day2"></th>
+                    <th id="day3"></th>
+                    <th id="day4"></th>
+                </tr>
+                <tr>
+                    <td><img src="images/placeholder.jpg" id="icon0" alt="weather icon"><br>
+                        <span id="temp0"></span> &#8457;</td>
+                    <td><img src="images/placeholder.jpg" id="icon1" alt="weather icon"><br>
+                        <span id="temp1"></span> &#8457;</td>
+                    <td><img src="images/placeholder.jpg" id="icon2" alt="weather icon"><br>
+                        <span id="temp2"></span> &#8457;</td>
+                    <td><img src="images/placeholder.jpg" id="icon3" alt="weather icon"><br>
+                        <span id="temp3"></span>  &#8457;</td>
+                    <td><img src="images/placeholder.jpg" id="icon4" alt="weather icon"><br>
+                        <span id="temp4"></span> &#8457;</td>
+                </tr>
+            </table>
+        </section>
+        <section id="sec1">
+            <div class="leftcol">
+                <h1>Hike the Gesyer</h1>
+                <p>"On November 30, 1937, a well drilling operation while attempting to build a natural hot springs
+                    swimming pool was surprised when it unintentionally released Soda Springs’s famous captive geyser,
+                    which surprised everyone by shooting 100 feet into the air. It has been capped and a timer activates
+                    it once every hour on the hour. The water is about 70 degrees Fahrenheit. There is now a park and a
+                    visitor center at the site. In addition to its captive geyser, Soda Springs has an industrial lava
+                    flow from the dumping of molten rock left over from Monsanto's phosphate mining and manufacturing
+                    process one mile north of the town."<a
+                        href="https://en.wikipedia.org/wiki/Soda_Springs_Geyser#cite_note-UntraveledRoad-1"
+                        target="blank"> Wikipedia</a></p>
+            </div>
+            <div class="rightcol"><img class="img1" src="images/hikess-large.jpg" alt="view of geyer in soda springs"
+                    srcset=" images/hikess-small.jpg 400w, images/hikess-med.jpg 800w, images/hikess-large.jpg 1200w">
+            </div>
+        </section>
+        <section id="sec2">
+            <div class="leftcol"><img class="img2" src="images/ssdowntown-large.jpg" alt="caribou county courthouse"
+                    srcset=" images/snow field-small.jpg 400w, images/snow field-med.jpg 800w, images/snow field-large.jpg 1200w">
+            </div>
+            <div class="rightcol">
+                <h1>Downtown Hike</h1>
+                <p>Caribou County's seat is Soda Springs, Idaho. Take the time to walk and appreciate this interesting
+                    small downtown. With a population of 3,058 at the 2010 census, you will not have to worry about
+                    crowds. Come enjoy the historic buildings. Make sure you stop by the oldest drug store in Idaho,
+                    <strong>Eastman Drug</strong>. It is located on 112 S Main and is complete with an old-fashioned soda fountain.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="leftcol">
+            <h3>Contact Information:</h3>
+            <p>123-456-7777<br>web18021@byui.edu</p>
+            <p><span id="currentDate"></span><br>
+                &copy;<span id="copyright-year"></span> | Lisa E. Weber | Forecast
+                Trek <a href="index.html">Home</a></p>
+        </div>
+        <div class="rightcol">
+            <iframe src="https://www.google.com/maps/d/embed?mid=1W3Hq-55CIIeuZlvwBxqEwpHynVQ" width="640"
+                height="480"></iframe>
+        </div>
+    </footer>
+    <script src="scripts/currentdate.js">
+    </script>
+    <script src="scripts/hamburger.js">
+    </script>
+    <script src="scripts/sodaspringsapi.js">
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="description"
+        content="Temple Inn and Suites by LisaWeber Student in CIT 230: Web Front-End Development at Brigham Young University-Idaho.">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alex+Brush" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="json/manifest.json">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Temple Inn and Suites | Contact</title>
+</head>
+
+<body>
+    <header class="flex">
+        <div class="logo">
+            <img src="images/mormon-155293_640.png" alt="logo outline of temple in salt lake city utah usa">
+        </div>
+        <div>
+            <h1>Temple Inn & Suites</h1>
+            <h2>Attending to your needs.</h2>
+        </div>
+    </header>
+    <nav>
+        <button id="hamburgerMenu" onclick="toggleMenu()">&equiv;Menu</button>
+        <ul id="menu" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="temples.html">Temples</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li class="active"><a href="#">Contact</a></li>
+
+        </ul>
+
+    </nav>
+
+    <main>
+
+        <div class="wrapper">
+            <h1>Contact</h1>
+            <div class="address">
+                <div class="innerAddress">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <p>4800 Montgomery Ln #300<br />Bethesda, MD 20814</p>
+                </div>
+                <div class="innerAddress">
+                    <i class="fas fa-envelope"></i>
+                    <p>info@templeinnandsuites.com</p>
+                </div>
+                <div class="innerAddress">
+                    <i class="fas fa-phone-volume"></i>
+                    <p>+1-800-INN-7777</p>
+                </div>
+            </div>
+
+            <div class="form">
+                <form method="get" action="thanks.html">
+                    <fieldset>
+                        <label class="top">Full
+                            Name*<input type="text" name="name" id="name" required="" pattern="[a-zA-Z]+[ ][a-zA-Z]+"
+                                minlength="5"></label>
+                        <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234"
+                                required=""></label>
+                        <label class="top">Email*
+                            <input type="email" name="email" placeholder="temple1234@gmail.com" required=""></label>
+                        <label class="top">Zip
+                            Code
+                            <input type="number" name="zipcode"></label>
+                        <div><label>Additional Information:</label></div>
+                        <textarea name="textarea" rows="10" cols="75"></textarea>
+                    </fieldset>
+                    <input type="submit" value="Send" class="submitBtn">
+                </form>
+            </div>
+
+            <div class="social">
+                <div class="innerSocial">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+    <footer>
+        <div class="leftcol">
+
+            <h1>Contact Information:</h1>
+            <p>info@templeinnandsuites.com<br>123-456-8888
+                <br>4800 Montgomery Ln #300<br>Bethesda, MD 20814<br>Please note this is a fictitious site built for a final project.</p>
+            <p><span id="currentDate"></span><br>
+                &copy;<span id="copyright-year"></span> | Lisa E. Weber | Temple Inn & Suites |
+                <a href="index.html">Home</a></p>
+            <h1>Attribution:</h1>
+            <p><a href="resource.html" target="_blank">Thank you!</a></p>
+        </div>
+        <div class="rightcol">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.404837028556!2d-77.09772048444077!3d38.983255949483194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0xb492a2c35d07c49f!2s4800+Montgomery+Ln+%23300Bethesda%2C+Bethesda%2C+MD+20814!5e0!3m2!1sen!2sus!4v1554907618618!5m2!1sen!2sus"
+                width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    </footer>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+</body>
+
+</html>
