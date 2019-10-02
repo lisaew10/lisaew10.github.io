@@ -34,20 +34,20 @@
 
     <script>
         //   oject literal just curly braces
-        var lisa = {
-            // key value pair or property and value property: 'value'
-            firstName: 'Lisa',
-            lastName: 'Weber',
-            birthYear: 1971,
-            family: ['Steve', 'Riley', 'David', 'Trent', 'Jacob', 'Rachel'],
-            job: 'student',
-            isMarried: false,
-        }
+        // var lisa = {
+        //     // key value pair or property and value property: 'value'
+        //     firstName: 'Lisa',
+        //     lastName: 'Weber',
+        //     birthYear: 1971,
+        //     family: ['Steve', 'Riley', 'David', 'Trent', 'Jacob', 'Rachel'],
+        //     job: 'student',
+        //     isMarried: false,
+        // }
         // console.log(lisa.firstName);
         // console.log(lisa['lastName']);
         // var x='birthYear';
         // console.log(lisa[x]);
-        // can use the '.' notation to access and change data
+        // // can use the '.' notation to access and change data
 
         // lisa.job = 'Web Design and Development Student';
         // lisa['isMarried'] = true;
@@ -55,7 +55,7 @@
 
         // two ways to initialize a object 'newObject'
 
-        // var steve = new Object();
+        // let steve = new Object();
         // steve.firstName ='Steve';
         // steve.birthYear = "1971";
         // steve['lastName'] = 'Weber';
@@ -65,20 +65,20 @@
         // OBJECT methods can attached functions to  object which are 'methods'
 
 
-        // var lisa = {
-        //     firstName: 'Lisa',
-        //     lastName: 'Weber',
-        //     birthYear: 1971,
-        //     family: ['Steve', 'Riley', 'David', 'Trent', 'Jacob', 'Rachel'],
-        //     job: 'student',
+        var lisa = {
+            firstName: 'Lisa',
+            lastName: 'Weber',
+            birthYear: 1971,
+            family: ['Steve', 'Riley', 'David', 'Trent', 'Jacob', 'Rachel'],
+            job: 'student',
           
-        //     calAge: function() {
+            calAge: function() {
 
-        //         return 2019 - this.birthYear;
-        //     }
+                return 2019 - this.birthYear;
+            }
 
-        // };
-        // console.log(lisa.calAge());
+        };
+        console.log(lisa.calAge());
         // this is now a method of lisa
     </script>
 </body>
