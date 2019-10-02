@@ -1,28 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>JavaScript Objects</title>
 </head>
+
 <body>
     <header>
         <h1>JavaScript Objects</h1>
     </header>
-<!-- objects and properties -->
-<h1>Object-oriented Programming</h1>
-<p>From w3schools: </br> In JavaScript, almost "everything" is an object.
 
-    Booleans can be objects (if defined with the new keyword)
-    Numbers can be objects (if defined with the new keyword)
-    Strings can be objects (if defined with the new keyword)
-    Dates are always objects
-    Maths are always objects
-    Regular expressions are always objects
-    Arrays are always objects
-    Functions are always objects
-    Objects are always objects
-    All JavaScript values, except primitives, are objects.</p>
+    <h1>Object-oriented Programming</h1>
+    <p>From w3schools:</p>
+    <div>In JavaScript, almost "everything" is an object:
+        <ul>
+            <li>Booleans can be objects (if defined with the new keyword)</li>
+            <li> Numbers can be objects (if defined with the new keyword)</li>
+            <li> Strings can be objects (if defined with the new keyword)</li>
+            <li> Dates are always objects</li>
+            <li> Maths are always objects</li>
+            <li> Regular expressions are always objects</li>
+            <li> Arrays are always objects</li>
+            <li> Functions are always objects</li>
+            <li> Objects are always objects</li>
+
+        </ul>
+        All JavaScript values, except primitives, are objects.
+    </div>
+    <!-- objects and properties group together varibles that have no particular order  arrays order matters a lot-->
+
+    <script>
+        //   oject literal just curly braces
+        var lisa = {
+            // key value pair or property and value property: 'value'
+            firstName: 'Lisa',
+            lastName: 'Weber',
+            birthYear: 1971,
+            family: ['Steve', 'Riley', 'David', 'Trent', 'Jacob', 'Rachel'],
+            job: 'student',
+            isMarried: false,
+        }
+        // console.log(lisa.firstName);
+        // console.log(lisa['lastName']);
+        // var x='birthYear';
+        // console.log(lisa[x]);
+        // can use the '.' notation to access and change data
+
+        // lisa.job = 'Web Design and Development Student';
+        // lisa['isMarried'] = true;
+        // console.log(lisa);
+
+        // two ways to initialize a object 'newObject'
+
+        // var steve = new Object();
+        // steve.firstName ='Steve';
+        // steve.birthYear = "1971";
+        // steve['lastName'] = 'Weber';
+        // console.log(steve);
+
+
+        // OBJECT methods can attached functions to  object which are 'methods'
+
+
+        // var lisa = {
+        //     firstName: 'Lisa',
+        //     lastName: 'Weber',
+        //     birthYear: 1971,
+        //     family: ['Steve', 'Riley', 'David', 'Trent', 'Jacob', 'Rachel'],
+        //     job: 'student',
+          
+        //     calAge: function() {
+
+        //         return 2019 - this.birthYear;
+        //     }
+
+        // };
+        // console.log(lisa.calAge());
+        // this is now a method of lisa
+    </script>
 </body>
+
 </html>
