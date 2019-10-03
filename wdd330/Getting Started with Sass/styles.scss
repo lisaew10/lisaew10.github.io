@@ -1,0 +1,38 @@
+// variables will follow
+
+//colors
+$body-background-color: #203A5E;
+// $body-color: #edddc7;
+$h1-color: #edddc7;
+$form-background-color: #edddc7;
+$input-color: white;
+$headlines-color : #97BBEB;
+$break-small: 20em;
+$break-medium: 31em;
+$break-large:60em;
+
+body {
+    background-color: $body-background-color; 
+    // color: $body-color;
+    
+}
+h1{
+    color: $h1-color;
+}
+
+ 
+#contactform {
+    background-color: $form-background-color;
+    input, textarea {
+        background-color: $input-color;
+        flex: 2;
+    }
+    @media (min-width: $break-small) {
+       & {
+          width: 90%;
+          max-width: 700px;
+          margin-left: auto;
+          margin-right: auto; 
+        } 
+    }
+}
