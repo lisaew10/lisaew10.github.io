@@ -1,0 +1,59 @@
+/* ripple out border transistion 	<a href="#" class="hvr-ripple-out">Ripple Out</a> */
+/* Ripple Out */
+body{
+    max-width: 900px;
+    margin: auto;
+  }
+  img{
+    width: 50px;
+  }
+  div{
+      padding: 1.2em;
+  }
+@-webkit-keyframes hvr-ripple-out {
+    100% {
+      top: -12px;
+      right: -12px;
+      bottom: -12px;
+      left: -12px;
+      opacity: 0;
+    }
+  }
+  
+  @keyframes hvr-ripple-out {
+    100% {
+      top: -12px;
+      right: -12px;
+      bottom: -12px;
+      left: -12px;
+      opacity: 0;
+      border-radius: 20px;
+    }
+  }
+  
+  .hvr-ripple-out {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+  
+    &:before {
+      content: '';
+      position: absolute;
+      border: #3f434d solid 1px;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      border-radius: 15px;
+    }
+  
+    &:hover:before, &:focus:before, &:active:before {
+      -webkit-animation-name: hvr-ripple-out;
+      animation-name: hvr-ripple-out;
+    }
+  }
