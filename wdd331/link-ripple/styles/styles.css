@@ -12,6 +12,9 @@ img {
 div {
   padding: 1.2em;
 }
+.small{
+  font-size: x-small;
+}
 
 @-webkit-keyframes hvr-ripple-out {
   100% {
