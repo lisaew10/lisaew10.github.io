@@ -1,1 +1,0 @@
-csslint: Could not read file data in /Users/lisa/Documents/CODE/Final-GitHub/weber-lisa.github.io/stylesheet.css. Is the file empty?

@@ -5,8 +5,10 @@ xTypography
 -------------------------------- */
 
 // fonts
-$primary-font: 'Nunito', sans-serif;
-$secondary-font: 'Lobster', cursive;
+$primary-font: 'Nunito',
+sans-serif;
+$secondary-font: 'Lobster',
+cursive;
 
 //font styling
 header h1 {
@@ -25,19 +27,20 @@ header h2 {
 }
 
 // For the "CSS" in the title
-abbr { text-decoration: none; }
+abbr {
+  text-decoration: none;
+}
 
 .summary {
-    p {
-        font-size: 1.1rem; 
-        color: $color-light;
-    }
+  p {
+    font-size: 1.1rem;
+    color: $color-light;
+  }
 }
 
 h3 {
   font-family: $primary-font;
   color: $color-accent;
-
   font-size: 1.3rem;
   font-weight: 700;
   line-height: 1.2;
@@ -54,14 +57,13 @@ p {
 a {
   // text-decoration: none;
   color: $color-link;
-}
-
-a:hover {
-  color: lighten($color-link, 10%);
+  :hover {
+    color: $color-5;
+  }
 }
 
 nav {
   li {
-      color: $color-light;
+    color: $color-light;
   }
 }

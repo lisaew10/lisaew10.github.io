@@ -15,12 +15,15 @@ $sky-1: #b3d4ff;
 $sky-2: #ffd699;
 
 $color-1: #275059; // Heading 1
-$color-link: #66C4D9; 
+$color-link: #66C4D9;
 $color-light: white;
 $color-4: #3F3F3F; // Body Color (for light BG)
 $color-5: #fe9200; // color hover on button
-$color-accent: #ffcc00; 
+$color-accent: #ffcc00;
 
 // additional colors
-$success: #6fce72; // green
-$alert: #e4655f; // red
+$transparent-10: rgba(255, 255, 255, .1); // 10% Transparent
+$transparent-20: rgba(255, 255, 255, .2); // 20% Transparent
+$transparent-30: rgba(255, 255, 255, .3); // 30% Transparent
+$transparent-40: rgba(255, 255, 255, .4); // 40% Transparent
+$transparent-50: rgba(255, 255, 255, .5); // 50% Transparent
