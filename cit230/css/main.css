@@ -12,7 +12,7 @@ body {
     color: black;
     /* background-color: #ffd0b0; */
 }
-a:link{
+/* a:link{
 color: black;
 }
 a:visited{
@@ -22,8 +22,27 @@ a:hover{
     background-color: #c96f53;
     color: black;
     border-radius: 5px;
-}
-
+} */
+:root {
+    --mainColor:#c96f53;
+  }
+a {
+    background:
+       linear-gradient(
+         to bottom, var(--mainColor) 0%,
+         var(--mainColor) 100%
+       );
+      background-position: 0 100%;
+      background-repeat: repeat-x;
+      background-size: 4px 4px;
+    color: #000;
+    text-decoration: none;
+    transition: background-size .2s;
+  }
+  
+  a:hover {
+    background-size: 4px 50px;
+  }
 h1 {
     font-size: 2.4rem;
     color: black;
